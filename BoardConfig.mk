@@ -5,7 +5,7 @@
 #
 
 # Inherit from sdm660-common
--include device/asus/sdm660-common/BoardConfigCommon.mk
+include device/asus/sdm660-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/asus/X01BD
 
@@ -26,4 +26,4 @@ TARGET_KERNEL_CONFIG := electroperf_defconfig
 TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
 
 # Inherit the proprietary files
--include vendor/asus/X01BD/BoardConfigVendor.mk
+include vendor/asus/X01BD/BoardConfigVendor.mk

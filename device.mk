@@ -34,5 +34,5 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     X01BDWifiOverlay
 
-# Inherit proprietary files
-$(call inherit-product-if-exists, vendor/asus/X01BD/X01BD-vendor.mk)
+# Inherit the proprietary files
+$(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)
