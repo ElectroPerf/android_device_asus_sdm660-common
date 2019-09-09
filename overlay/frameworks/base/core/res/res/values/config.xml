@@ -165,4 +165,7 @@
     <dimen name="status_bar_height_portrait">81px</dimen>
     <dimen name="status_bar_height_landscape">81px</dimen>
 
+    <dimen name="rounded_corner_radius_top">90px</dimen>
+    <dimen name="rounded_corner_radius_bottom">90px</dimen>
+
 </resources>
