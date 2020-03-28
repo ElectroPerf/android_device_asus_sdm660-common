@@ -134,8 +134,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.cpurend.vsync=false \
+    debug.sf.disable_backpressure=1 \
     debug.sf.enable_hwc_vds=1 \
-    debug.sf.enable_gl_backpressure=1 \
     debug.sf.hw=1 \
     debug.sf.recomputecrop=0 \
     persist.hwc.mdpcomp.enable=true \
