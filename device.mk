@@ -30,5 +30,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
+# Wifi
+PRODUCT_PACKAGES += \
+    X01BDWifiOverlay
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/asus/X01BD/X01BD-vendor.mk)
