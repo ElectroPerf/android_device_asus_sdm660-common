@@ -16,6 +16,7 @@ ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.dolby.ds2.enabled=true
 vendor.audio.dolby.ds2.hardbypass=false
+vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio_hal.period_size=192
 vendor.audio.hw.aac.encoder=true
