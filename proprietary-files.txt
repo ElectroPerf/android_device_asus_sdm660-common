@@ -294,11 +294,11 @@ vendor/lib/libmmcamera_isp_sce40.so
 vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
-# Display Firmware
-vendor/firmware/Himax_firmware.bin
-vendor/firmware/hx_criteria.csv
-vendor/firmware/novatek_ts_fw_v8D.bin
-vendor/firmware/startup_fw_update.img
+# Display Firmware - from UL-ASUS_X01BD-WW-16.2017.2007.094-user
+vendor/firmware/Himax_firmware.bin|74a39087ed70f23f599822dc71c271832cdc4d40
+vendor/firmware/hx_criteria.csv|492a73805e93d3f5f851a949642003f7813b9e03
+vendor/firmware/novatek_ts_fw_v8D.bin|b3ecf4d7a6ba6915e45e9fb187723b81184a6c5e
+vendor/firmware/startup_fw_update.img|4fa915e672425ff91f98a21c9e8335e8055b6b46
 
 # DRM Widevine firmware
 vendor/firmware/widevine.b02
