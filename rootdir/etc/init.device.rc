@@ -57,6 +57,10 @@ on boot
 
     chown radio radio sys/module/stk3x3x/parameters/call_status_flag
 
+    # Tap to wake node
+    chown system system /proc/tpd_gesture
+    chmod 0660 /proc/tpd_gesture
+
 on post-fs-data
     # Create directory for focaltech fingerprint
     mkdir /data/vendor/focaltech 0760 system system
