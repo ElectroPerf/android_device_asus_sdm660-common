@@ -145,7 +145,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_rotator_downscale=1
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    debug.sf.latch_unsignaled=1 \
+    debug.sf.latch_unsignaled=0 \
     persist.demo.hdmirotationlock=false \
     persist.hwc.enable_vds=1 \
     sdm.debug.disable_skip_validate=1 \
