@@ -221,6 +221,8 @@
         <item>40</item>
     </integer-array>
 
+    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
          {@link android.util.PathParser}.
@@ -238,36 +240,13 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M -204.5 0
-        C -188.5 0 -178.8 8.8 -177.2 10.2
-        C -171.3 15.3 -169.7 18.1 -167.4 20.6
-        C -165.1 23.1 -160.5 30.8 -159.1 33.2
-        C -157.7 35.5 -155.4 41.5 -154 44.3
-        C -152.5 47.4 -151.3 50.7 -147.1 58
-        C -142.9 65.5 -137.2 70.3 -137.2 70.3
-        C -137.2 70.3 -134.2 73.5 -128.4 76.4
-        C -120.7 80.2 -105.4 80.9 -105.4 80.9
-        L 0 80.9
-        L 105.5 80.9
-        C 105.5 80.9 120.7 80.2 128.4 76.4
-        C 134.2 73.5 137.2 70.3 137.2 70.3
-        C 137.2 70.3 142.9 65.5 147.2 58
-        C 151.3 50.7 152.5 47.4 154 44.3
-        C 155.4 41.5 157.7 35.5 159.1 33.2
-        C 160.5 30.8 165.1 23.1 167.4 20.6
-        C 169.7 18.1 171.3 15.3 177.2 10.2
-        C 178.8 8.8 188.5 0 204.5 0
-        L 0 0
-        L 0 0
-        L -204.5 0
-        Z
-    </string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -196.94531 0 C -155.00077 0 -153.18198 81 -110 81 L 0 81 L 110 81 C 153.18198 81 155.00077 0 196.94531 0 L 0 0 L -196.94531 0 z</string>
+
+    <!-- Rounded corner radius -->
+    <dimen name="rounded_corner_radius">90px</dimen>
 
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">81px</dimen>
     <dimen name="status_bar_height_landscape">81px</dimen>
 
-    <dimen name="rounded_corner_radius_top">90px</dimen>
-    <dimen name="rounded_corner_radius_bottom">90px</dimen>
 </resources>
