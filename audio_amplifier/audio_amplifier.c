@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Open Source Project
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2021 The dotOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -225,7 +225,7 @@ amplifier_module_t HAL_MODULE_INFO_SYM = {
         .hal_api_version = HARDWARE_HAL_API_VERSION,
         .id = AMPLIFIER_HARDWARE_MODULE_ID,
         .name = "ASUS SDM660 TFA98XX audio amplifier HAL",
-        .author = "The LineageOS Open Source Project",
+        .author = "The dotOS Open Source Project",
         .methods = &hal_module_methods,
     },
 };

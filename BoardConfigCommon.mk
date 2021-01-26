@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2021 The dotOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -154,7 +154,7 @@ PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 BOARD_VNDK_VERSION := current
 
 # Vendor Security patch level
-VENDOR_SECURITY_PATCH := 2020-12-05
+VENDOR_SECURITY_PATCH := 2021-08-05
 
 # WiFi
 BOARD_HAS_QCOM_WLAN := true
