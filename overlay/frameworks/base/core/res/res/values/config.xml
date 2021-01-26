@@ -247,4 +247,11 @@
         <item>com.android.touch.gestures.KeyHandler</item>
     </string-array>
 
+    <!-- Does the device support battery LED? -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
+
+    <!-- Does the battery LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">true</bool>
+
 </resources>
