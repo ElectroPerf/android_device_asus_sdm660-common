@@ -1,0 +1,52 @@
+[
+	{
+		"repository": "device_asus_sdm660-common",
+		"target_path": "device/asus/sdm660-common"
+	},
+	{
+		"repository": "kernel_asus_sdm660",
+		"target_path": "kernel/asus/sdm660"
+	},
+	{
+		"repository": "vendor_asus_proprietary",
+		"target_path": "vendor/asus"
+	},
+	{
+		"repository": "ElectroPerf/vendor_GoogleCamera",
+		"target_path": "vendor/GoogleCamera",
+	        "remote": "github",
+		"branch": "11"
+	},
+	{
+		"repository": "mvaisakh/gcc-arm64",
+		"target_path": "prebuilts/gcc/linux-x86/aarch64/aarch64-elf",
+		"clone-depth": "1",
+		"remote": "github",
+		"branch": "gcc-master"
+	},
+	{
+		"repository": "mvaisakh/gcc-arm",
+		"target_path": "prebuilts/gcc/linux-x86/arm/arm-eabi",
+		"clone-depth": "1",
+		"remote": "github",
+		"branch": "gcc-master"
+	},
+	{
+		"repository": "ElectroPerf/hardware_qcom-caf_msm8998_display",
+		"target_path": "hardware/qcom-caf/msm8998-asus/display",
+		"remote": "github",
+		"branch": "11"
+	},
+	{
+		"repository": "LineageOS/android_hardware_qcom_audio",
+		"target_path": "hardware/qcom-caf/msm8998-asus/audio",
+		"remote": "github",
+		"branch": "lineage-18.1-caf-msm8998"
+	},
+	{
+		"repository": "LineageOS/android_hardware_qcom_media",
+		"target_path": "hardware/qcom-caf/msm8998-asus/media",
+		"remote": "github",
+                "branch": "lineage-18.1-caf-msm8998"
+	}
+]
