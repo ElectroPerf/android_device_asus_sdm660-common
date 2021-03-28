@@ -38,3 +38,6 @@
 
 # Vibrator
 /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-01/800f000.qcom,spmi:qcom.pm660@1:qcom,haptics@c000/leds/vibrator(/.*)?             u:object_r:sysfs_vibrator:s0
+
+# Dolby
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@1\.0-service                     u:object_r:hal_dms_default_exec:s0

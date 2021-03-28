@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- Copyright (c) 2015-2019, The Linux Foundation. All rights reserved.    -->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+<!--       MODIFIED FOR DUAL_SPEAKER MOD (X01BD) BY LSCAMBO13 - XDA         -->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 <!--                                                                        -->
-<!-- Redistribution and use in source and binary forms, with or without     -->
+<!-- Copyright (c) 2015-2017, The Linux Foundation. All rights reserved.    -->
+<!--                                                                        -->
 <!-- modification, are permitted provided that the following conditions are -->
 <!-- met:                                                                   -->
 <!--     * Redistributions of source code must retain the above copyright   -->
@@ -241,10 +244,6 @@
     <ctl name="RT_PROXY_1_TX SetCalMode" value="CAL_MODE_NONE" />
     <!-- RT Proxy Cal end -->
 
-    <!-- mixer control to disable lowlatency qos voting -->
-    <ctl name="MultiMedia5_RX QOS Vote" value="Disable" />
-    <!-- mixer control to disable lowlatency qos voting end -->
-
     <!-- Incall Recording -->
     <ctl name="MultiMedia1 Mixer VOC_REC_UL" value="0" />
     <ctl name="MultiMedia1 Mixer VOC_REC_DL" value="0" />
@@ -313,11 +312,11 @@
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     <ctl name="EAR PA Boost" value="ENABLE" />
 
-    <ctl name="RX1 Digital Volume" value="84" />
-    <ctl name="RX2 Digital Volume" value="84" />
-    <ctl name="RX3 Digital Volume" value="84" />
-    <ctl name="RX4 Digital Volume" value="84" />
-    <ctl name="RX5 Digital Volume" value="84" />
+    <ctl name="RX1 Digital Volume" value="98" />
+    <ctl name="RX2 Digital Volume" value="98" />
+    <ctl name="RX3 Digital Volume" value="98" />
+    <ctl name="RX4 Digital Volume" value="98" />
+    <ctl name="RX5 Digital Volume" value="98" />
     <ctl name="ADC1 Volume" value="4" />
     <ctl name="ADC2 Volume" value="4" />
     <ctl name="ADC3 Volume" value="4" />
@@ -341,9 +340,9 @@
     <!-- Interpolator chain controls -->
 	<!-- ADD RX Chain Controls --> 
 
-    <ctl name="RX1 MIX1 INP1" value="ZERO" />
+    <ctl name="RX1 MIX1 INP1" value="RX1" />
     <ctl name="RX2 MIX1 INP1" value="ZERO" />
-    <ctl name="RDAC2 MUX" value="ZERO" />
+    <ctl name="RDAC2 MUX" value="RX1" />
     <ctl name="HPHL" value="ZERO" />
     <ctl name="HPHR" value="ZERO" />
     <ctl name="RX1 MIX2 INP1" value="ZERO" />
@@ -434,6 +433,7 @@
     <!-- Huaqin add for config new audioboard xml by xudayi at 2018/03/05 start -->
     <path name="deep-buffer-playback speaker">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
     <!-- Huaqin add for config new audioboard xml by xudayi at 2018/03/05 end -->
 
@@ -507,11 +507,13 @@
 	<!-- Huaqin add for ZQL1650-155 by xudayi at 2018/02/02 start -->
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia5" value="1" />
 	<!-- Huaqin add for ZQL1650-155 by xudayi at 2018/02/02 end -->
+	
     </path>
 
     <!-- Huaqin add for config new audioboard xml by xudayi at 2018/03/05 start -->
     <path name="low-latency-playback speaker">
 	<ctl name="TERT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
+    <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia5" value="1" />
     </path>
     <!-- Huaqin add for config new audioboard xml by xudayi at 2018/03/05 end -->
 
@@ -665,10 +667,6 @@
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia2" value="1" />
     </path>
 
-    <path name="low-latency-playback resume">
-        <ctl name="MultiMedia5_RX QOS Vote" value="Enable" />
-    </path>
-
     <path name="compress-offload-playback">
         <!-- Huaqin add for ZQL1650-155 by xudayi at 2018/02/05 start -->
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia4" value="1" />
@@ -678,6 +676,7 @@
     <!-- Huaqin add for config new audioboard xml by xudayi at 2018/03/05 start -->
     <path name="compress-offload-playback speaker">
 	<ctl name="TERT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+    <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia4" value="1" />
     </path>
     <!-- Huaqin add for config new audioboard xml by xudayi at 2018/03/05 end -->
 
@@ -1301,6 +1300,7 @@
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia15" value="1" />
     </path>
 
+    <!-- L S C A M B O 1 3 -->
     <path name="compress-offload-playback8 headphones-44.1">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia15" value="1" />
     </path>
@@ -1829,6 +1829,17 @@
     </path>
 
     <!-- These are actual sound device specific mixer settings -->
+	
+	<path name="earpiece">
+	<!-- lscambo13 start -->
+        <ctl name="INT0_MI2S_RX Channels" value="Two" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RDAC2 MUX" value="RX1" />
+        <ctl name="EAR PA Gain" value="POS_1P5_DB" />	
+	<ctl name="RX1 Digital Volume" value="97" />
+	<!-- lscambo13 end -->
+    </path>
+	
     <path name="adc1">
         <ctl name="ADC1 Volume" value="6" />
         <ctl name="DEC1 MUX" value="ADC1" />
@@ -1865,8 +1876,9 @@
     </path>
 
     <path name="speaker">
+	<path name="earpiece" />
 	<!-- Huaqin add for config new audioboard xml by xudayi at 2018/03/05 start -->
-        <ctl name="INT0_MI2S_RX Channels" value="One" />
+        <!-- ctl name="INT0_MI2S_RX Channels" value="One" /-->
         <!-- ctl name="RX2 MIX1 INP1" value="RX2" /-->
         <!-- ctl name="RDAC2 MUX" value="RX2" /-->
         <!-- ctl name="RX HPH Mode" value="HD2" /-->
@@ -1996,7 +2008,6 @@
         <ctl name="RDAC2 MUX" value="RX1" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
         <ctl name="EAR_S" value="Switch" />
-	<ctl name="RX1 Digital Volume" value="88" />
 	<!-- Huaqin add for optimize handset ctl path by xudayi at 2018/03/07 end -->
     </path>
 
