@@ -13,11 +13,10 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds.  Do not translate. -->
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+  <!-- Smart Charging -->
+  <bool name="config_smartChargingAvailable">true</bool>
 
   <!-- Battery Health -->
   <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full</string>

@@ -144,7 +144,7 @@ on boot
     # an ack packet comes out of order
     write /proc/sys/net/netfilter/nf_conntrack_tcp_be_liberal 1
 
-    # Set the console loglevel to < KERN_INFO
+    # Set the console loglevel to KERN_INFO
     # Set the default message loglevel to KERN_INFO
     write /proc/sys/kernel/printk "6 6 1 7"
 
@@ -422,6 +422,12 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/m
     class core
     user root
     group root
+
+on boot
+  chown system system /sys/class/power_supply/battery/input_suspend
+  chmod 0666 /sys/class/power_supply/battery/input_suspend
+  chown system system /sys/class/power_supply/battery/charging_enabled
+  chmod 0660 /sys/class/power_supply/battery/charging_enabled
 
 on charger
     setprop persist.sys.usb.config mass_storage
