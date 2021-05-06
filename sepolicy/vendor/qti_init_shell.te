@@ -1,1 +1,0 @@
-allow qti_init_shell sysfs_corecontrol:file { write };

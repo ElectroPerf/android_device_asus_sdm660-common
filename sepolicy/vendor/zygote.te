@@ -1,0 +1,3 @@
+allow zygote unlabeled:dir { search };
+allow zygote exported_camera_prop:file { read };
+

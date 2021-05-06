@@ -3,3 +3,9 @@ allow system_server sysfs_battery_supply:file { getattr open write };
 
 # Allow system_server to set persist_camera_prop
 get_prop(system_server, vendor_persist_camera_prop)
+
+allow system_server unlabeled:dir { write setattr };
+
+allow system_server userspace_reboot_exported_prop:file { read };
+
+allow system_server exported_camera_prop:file { read };
