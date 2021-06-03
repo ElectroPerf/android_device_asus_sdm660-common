@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The dotOS Project
+# Copyright (C) 2020 The Project 404
 #
 # SPDX-License-Identifier: Apache-2.0
 #
