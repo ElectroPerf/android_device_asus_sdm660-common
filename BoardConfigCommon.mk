@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 The Project-404 Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -139,9 +139,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
-
-# Override hals
-OVERRIDE_QCOM_HARDWARE_VARIANT := msm8998-asus
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
