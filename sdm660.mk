@@ -16,6 +16,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Board Platform
+TARGET_BOARD_PLATFORM := sdm660
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
