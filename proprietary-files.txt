@@ -309,6 +309,12 @@ vendor/lib64/libtinyxml2_1.so
 vendor/lib/hw/vulkan.sdm660.so
 vendor/lib64/hw/vulkan.sdm660.so
 
+# Hotword enrollment
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|ff5b936acb63a78d4a62643d38ef4f9074a00a8e;PRESIGNED
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|4b710f4dab6eef900d337185675c6cdfc95eab0b;PRESIGNED
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|0492cd3db2e253e23b78e56fa8ea7b3a4b15edeb
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
