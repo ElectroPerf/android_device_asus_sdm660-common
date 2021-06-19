@@ -421,9 +421,6 @@ PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
 PRODUCT_VENDOR_VERITY_PARTITION=/dev/block/bootdevice/by-name/vendor
 $(call inherit-product, build/target/product/verity.mk)
 
-# Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
 
 # FIXME: master: compat for libprotobuf
 # See https://android-review.googlesource.com/c/platform/prebuilts/vndk/v28/+/1109518
@@ -463,4 +460,5 @@ PRODUCT_BOOT_JARS += \
 # QTI-COMMON
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
-    telephony
+    telephony \
+    vibrator
