@@ -461,4 +461,5 @@ PRODUCT_BOOT_JARS += \
 TARGET_COMMON_QTI_COMPONENTS := \
     av \
     telephony \
-    vibrator
+    vibrator \
+    gps
