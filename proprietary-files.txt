@@ -666,10 +666,6 @@ system/lib64/libOmxMux.so|da82ca706b10f5c97c9cab33afbc93abbca7d3d0
 system/lib64/libwfdclient.so|8612f7068f76c8a51faeae963b95e2e9743c4a46
 system/lib64/libwfdnative.so|61c1297f7ac949cea396b8b0971a1083307f7bb1
 -system/priv-app/WfdService/WfdService.apk|a605ec4ceb3e57867759ee4d121c32afbb0195b8
-system_ext/lib/libmmosal.so|79c2c9c9c9916a9cc445b8238c0f7ce9bf9e6c00
-system_ext/lib/libmmparser_lite.so|6546b02d33157bec3ce80a1355f85c241894b29e
-system_ext/lib64/libmmosal.so|24aa480c4f96b5db5c46bf1fa0d1d90a607f0120
-system_ext/lib64/libmmparser_lite.so|227ebbd6577f33c2c50f2334e0b4081fb5ddb094
 vendor/bin/wifidisplayhalservice|c069a7f3c86ad3a97c98410d109aecc599ee5a6f
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc|eae86ccd57af7ad8b71f23e79f35d1b401b811e0
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so|a4dd8ee7561da1041cf8236def6e86d49a3d984f
