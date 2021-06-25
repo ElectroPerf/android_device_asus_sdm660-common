@@ -105,7 +105,8 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.sdm660 \
-    Camera2
+    Camera2 \
+    GCamGOPrebuilt
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0 \
