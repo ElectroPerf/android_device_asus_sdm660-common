@@ -1,3 +1,6 @@
+# Gboard
+ro.com.google.ime.kb_pad_port_b=1
+
 # IORAP
 ro.iorapd.enable=true
 
