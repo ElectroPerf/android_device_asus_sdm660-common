@@ -14,8 +14,6 @@ persist.vendor.audio.hw.binder.size_kbyte=1024
 persist.vendor.audio.ras.enabled=false
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
-vendor.audio.dolby.ds2.enabled=true
-vendor.audio.dolby.ds2.hardbypass=false
 vendor.audio.feature.a2dp_offload.enable=true
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio_hal.period_size=192
@@ -120,6 +118,12 @@ vendor.video.disable.ubwc=1
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
 ro.zram.periodic_wb_delay_hours=24
+
+# Dolby
+persist.vendor.audio_fx.current=dolby
+ro.vendor.dolby.dax.version=DS1_2.2.0.0_r1
+vendor.audio.dolby.ds2.enabled=true
+vendor.audio.dolby.ds2.hardbypass=true
 
 # Blur
 ro.sf.blurs_are_expensive=1 

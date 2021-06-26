@@ -1,3 +1,8 @@
 type focaltech_hwservice, hwservice_manager_type;
+
+# Dolby
+type hal_dms_hwservice, hwservice_manager_type;
+
+# Nfc
 type nxpese_hwservice, hwservice_manager_type;
 type hal_dms_hwservice, hwservice_manager_type;
