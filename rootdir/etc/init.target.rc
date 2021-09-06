@@ -27,6 +27,7 @@
 #
 #
 
+import /vendor/etc/init/vendor.qti.adsprpc-service.rc
 import /vendor/etc/init/vendor.qti.cdsprpc-service.rc
 
 on early-init
@@ -226,16 +227,6 @@ service vendor.qseecomd /vendor/bin/qseecomd
 #    oneshot
 #
 
-service adsprpcd_root /vendor/bin/adsprpcd
-   class main
-   user media
-   group media
-
-service adsprpcd /vendor/bin/adsprpcd audiopd
-   class main
-   user media
-   group media
-
 service hbtp /system/vendor/bin/hbtp_daemon
     class main
     user system
@@ -258,6 +249,12 @@ service hbtp /system/vendor/bin/hbtp_daemon
 #    group system inet
 #    disabled
 #
+
+service vendor.adsprpcd /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   disabled
 
 #service usf_sync_gesture /system/vendor/bin/usf_sync_gesture
 #    user system
