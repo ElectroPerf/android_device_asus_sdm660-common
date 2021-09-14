@@ -460,7 +460,6 @@ vendor/lib/libpn553_fw.so
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
-vendor/bin/energy-awareness
 vendor/bin/msm_irqbalance
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
 vendor/lib/libperfconfig.so
