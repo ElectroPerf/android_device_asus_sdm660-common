@@ -292,4 +292,6 @@
     <string name="config_gpu_clock_path">/sys/kernel/gpu/gpu_clock</string>
     <string name="config_gpu_busy_path">/sys/kernel/gpu/gpu_busy</string>
 
+    <!-- If this is true, device supports Sustained Performance Mode. -->
+    <bool name="config_sustainedPerformanceModeSupported">true</bool>
 </resources>
