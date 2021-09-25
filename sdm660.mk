@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2022 Paranoid Android
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -227,10 +227,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.asus_sdm660
 
-# LiveDisplay native
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
@@ -294,11 +290,15 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    AsusSDM660CarrierConfig \
+    AsusSDM660CellBroadcastReceiver \
+    AsusSDM660Frameworks \
+    AsusSDM660Settings \
+    AsusSDM660SystemUI \
+    AsusSDM660Telephony \
+    TetheringOverlay \
+    WifiOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -434,10 +434,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
@@ -469,8 +465,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
-    TetheringConfigOverlay \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
