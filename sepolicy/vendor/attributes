@@ -1,0 +1,6 @@
+attribute hal_pasrmanager_memory;
+attribute hal_pasrmanager_memory_client;
+attribute hal_pasrmanager_memory_server;
+attribute hal_qspmhal;
+attribute hal_qspmhal_client;
+attribute hal_qspmhal_server;
