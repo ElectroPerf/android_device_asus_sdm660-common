@@ -39,11 +39,11 @@ const static std::string kLcdBacklightPath = "/sys/class/leds/lcd-backlight/brig
 const static std::string kLcdMaxBacklightPath = "/sys/class/leds/lcd-backlight/max_brightness";
 
 // Red led
-const static std::string kRedBlinkPath = "/sys/class/leds/red/blink";
+const static std::string kRedBreathPath = "/sys/class/leds/red/breath";
 const static std::string kRedLedPath = "/sys/class/leds/red/brightness";
 
 // Green led
-const static std::string kGreenBlinkPath = "/sys/class/leds/green/blink";
+const static std::string kGreenBreathPath = "/sys/class/leds/green/breath";
 const static std::string kGreenLedPath = "/sys/class/leds/green/brightness";
 
 int main() {
@@ -65,9 +65,9 @@ int main() {
         lcdMaxBacklight >> lcdMaxBrightness;
     }
 
-    std::ofstream redBlink(kRedBlinkPath);
-    if (!redBlink) {
-        LOG(ERROR) << "Failed to open " << kRedBlinkPath << ", error=" << errno << " ("
+    std::ofstream redBreath(kRedBreathPath);
+    if (!redBreath) {
+        LOG(ERROR) << "Failed to open " << kRedBreathPath << ", error=" << errno << " ("
                    << strerror(errno) << ")";
         return -errno;
     }
@@ -79,9 +79,9 @@ int main() {
         return -errno;
     }
 
-    std::ofstream greenBlink(kGreenBlinkPath);
-    if (!greenBlink) {
-        LOG(ERROR) << "Failed to open " << kGreenBlinkPath << ", error=" << errno << " ("
+    std::ofstream greenBreath(kGreenBreathPath);
+    if (!greenBreath) {
+        LOG(ERROR) << "Failed to open " << kGreenBreathPath << ", error=" << errno << " ("
                    << strerror(errno) << ")";
         return -errno;
     }
@@ -94,8 +94,8 @@ int main() {
     }
 
     android::sp<ILight> service =
-        new Light({std::move(lcdBacklight), lcdMaxBrightness}, std::move(redBlink),
-                  std::move(redLed), std::move(greenBlink), std::move(greenLed));
+        new Light({std::move(lcdBacklight), lcdMaxBrightness}, std::move(redBreath),
+                  std::move(redLed), std::move(greenBreath), std::move(greenLed));
 
     configureRpcThreadpool(1, true);
 

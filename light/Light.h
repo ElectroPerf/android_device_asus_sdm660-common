@@ -32,8 +32,8 @@ namespace V2_0 {
 namespace implementation {
 
 struct Light : public ILight {
-    Light(std::pair<std::ofstream, uint32_t>&& lcd_backlight, std::ofstream&& red_blink,
-          std::ofstream&& red_led, std::ofstream&& green_blink, std::ofstream&& green_led);
+    Light(std::pair<std::ofstream, uint32_t>&& lcd_backlight, std::ofstream&& red_breath,
+          std::ofstream&& red_led, std::ofstream&& green_breath, std::ofstream&& green_led);
 
     // Methods from ::android::hardware::light::V2_0::ILight follow.
     Return<Status> setLight(Type type, const LightState& state) override;
@@ -51,11 +51,11 @@ struct Light : public ILight {
     std::pair<std::ofstream, uint32_t> mLcdBacklight;
 
     // Red led
-    std::ofstream mRedBlink;
+    std::ofstream mRedBreath;
     std::ofstream mRedLed;
 
     // Green led
-    std::ofstream mGreenBlink;
+    std::ofstream mGreenBreath;
     std::ofstream mGreenLed;
 
     LightState mAttentionState;
