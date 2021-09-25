@@ -168,7 +168,7 @@ TARGET_KERNEL_VERSION := 4.19
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.asus_sdm660
+    android.hardware.lights-service.asus_sdm660
 
 # Media
 PRODUCT_PACKAGES += \
