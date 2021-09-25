@@ -1,1 +1,2 @@
 allow hal_bluetooth_qti diag_device:chr_file { read write open ioctl };
+allow hal_bluetooth_qti hal_bluetooth_qti:qipcrtr_socket { create };
