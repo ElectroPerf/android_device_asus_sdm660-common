@@ -139,6 +139,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.hw=1 \
+    debug.sf.recomputecrop=0 \
     vendor.display.disable_rotator_downscale=1 \
     vendor.display.idle_time=32767
 
