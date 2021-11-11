@@ -102,3 +102,5 @@ ro.lmk.log_stats = true
 ro.soc.manufacturer=QTI
 ro.soc.model=SDM660
 
+# USB
+persist.vendor.usb.config=diag,serial_cdev,rmnet,adb
