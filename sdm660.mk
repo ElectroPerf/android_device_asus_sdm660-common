@@ -35,7 +35,6 @@ PRODUCT_COPY_FILES += \
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
-    com.dsi.ant.antradio_library \
     com.dsi.ant@1.0.vendor
 
 # Bluetooth
@@ -58,6 +57,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5 \
     vendor.qti.hardware.camera.device@1.0
+
+# Capability Configstore
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \

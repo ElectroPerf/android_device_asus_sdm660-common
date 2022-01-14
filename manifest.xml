@@ -23,6 +23,12 @@
         <fqname>@1.0::IOmx/default</fqname>
         <fqname>@1.0::IOmxStore/default</fqname>
     </hal>
+    <!-- CAPABILIITY CONFIGSTORE HAL SERVICE  -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.capabilityconfigstore</name>
+        <transport>hwbinder</transport>
+	<fqname>@1.0::ICapabilityConfigStore/default</fqname>
+    </hal>
     <!-- RENDERSCRIPT -->
     <hal format="hidl">
         <name>android.hardware.renderscript</name>
