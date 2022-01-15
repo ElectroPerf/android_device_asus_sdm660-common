@@ -50,9 +50,3 @@ sh_binary {
     src: "bin/init.qti.dcvs.sh",
     vendor: true,
 }
-
-sh_binary {
-    name: "init.btmac.sh",
-    src: "bin/init.btmac.sh",
-    vendor: true,
-}

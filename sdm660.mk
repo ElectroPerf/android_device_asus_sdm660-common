@@ -331,7 +331,6 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.btmac.sh \
     init.qcom.sensors.sh \
     init.qti.dcvs.sh
 
