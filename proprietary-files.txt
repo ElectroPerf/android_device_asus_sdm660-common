@@ -766,7 +766,6 @@ product/etc/permissions/telephony_product_privapp-permissions-qti.xml|42f4553b61
 -system_ext/app/SimContact/SimContact.apk|bdd9d9a7accd4cda9c71bd8abce6de8a7a451226
 -system_ext/app/SimSettings/SimSettings.apk|ae2a4437e56d3b8453e20f4160ae54374b1ec7db
 -system_ext/app/atfwd/atfwd.apk|51ac329b50b9ce858c67cef69e93cb527508f8c4
--system_ext/app/datastatusnotification/datastatusnotification.apk|2fcf2e570818eb317de45f42c0a674db875b6ee4
 -system_ext/app/embms/embms.apk|010db3d97f4faad191f1a53415d7cf0a94dabcd1
 -system_ext/app/imssettings/imssettings.apk|8b47c43d56228dcce93cc8c07c6ceb08cb3d2fe5
 -system_ext/app/remoteSimLockAuthentication/remoteSimLockAuthentication.apk|3ec7ba081138560b1d0dd3ba78fd3898127a76a7
