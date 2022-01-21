@@ -443,4 +443,5 @@ TARGET_COMMON_QTI_COMPONENTS := \
     audio \
     gps \
     telephony \
-    bt
+    bt \
+    av
