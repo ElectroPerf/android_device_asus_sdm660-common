@@ -174,6 +174,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     bt.max.hfpclient.connections=1 \
     vendor.bluetooth.soc=cherokee
 
+# Board Platform
+TARGET_BOARD_PLATFORM := sdm660
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0 \
