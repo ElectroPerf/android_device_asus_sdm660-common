@@ -26,7 +26,6 @@ LOCAL_SHARED_LIBRARIES := \
     libaudioroute \
     libdl \
     libaudioutils \
-    libhwbinder \
     libhidlbase \
     libprocessgroup \
     libutils \
