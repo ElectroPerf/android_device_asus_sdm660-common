@@ -93,20 +93,40 @@ vendor/lib64/soundfx/libqcvirt.so|87e373b19ef8afed1f087571136b37c3a8d452c0
 # Bluetooth - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|a0ad0c5fad68002cf387bc0f758c55fb2dc89756
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|5757e26779f8a2714c06767fb2aa9307cf825aaa
+vendor/lib/hw/audio.bluetooth_qti.default.so|82cba590c4d051ca4a91ad1098ad1058a05d662f
+vendor/lib/hw/com.dsi.ant@1.0-impl.so|0878e6b855e4b7495214bca404f13de9053b52f6
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|cdc97c1e06642d39d49ec055a86896cf1bd3b4c1
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|a25ee727994d85091d6817f22fba4196181a9c79
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|61c91107a4032634f1520340e75f015e44fd8dbc
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|c66a9333d001cb7a80d89eec48c5faf852487723
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|509da708577441d52834340377b3c6ccde399b7d
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|c0a0a751a0079f58fe9c71d815771395a0ae3751
+vendor/lib/btaudio_offload_if.so|d823cdc8151f605933f4f043d263ee64290650e4
+vendor/lib/libbluetooth_audio_session_qti.so|828dc2829dee1374476f2d5276fb2ffced252bcf
+vendor/lib/libbluetooth_audio_session_qti_2_1.so|2b8956c9bcb649a5710ac8b0f5010c439d0eb261
+vendor/lib/libbt-hidlclient.so|4f0a17420cf6b96b3b33ebd39f563072345c54a7
+vendor/lib/libbtnv.so|def5cfd6bc96962911eb6b485b5ce01aec70c6dc
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|7e4587a1ac13de4d1ee8463b3aae487346f31b12
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|fbce94fed6a22fd527506d14d10a4df785b8fa25
+vendor/lib/vendor.qti.hardware.fm@1.0.so|ec14a34ecae5061d674283499a812374c8be4ce5
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|50caf5267687060b01f7bf021dfed70eb70ac80c
+vendor/lib64/hw/audio.bluetooth_qti.default.so|8a9f099448ba368e819dc9bb5730396f7982d6ae
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|68131dd2db0df81301d390dc1412bfe7ee54915b
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|01d5106903316a61927ef8a41e2c02e59ead7e8a
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|e9af027bbc9468b3bc92bc80185a620f636a1e42
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|8b6412d4ec8b4d9885b8ab60d4ddd9e6987bb111
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|7b858110fc095441bdec79215adabb03000dabce
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|84e96f1a573cd12e05550d8cf956e5a3c5b9021b
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|b3778cb15a7e852660a4e4e4e23889a6317affdb
+vendor/lib64/btaudio_offload_if.so|9ab93bb45b6e17e445bcad90524330c86a4322ab
+vendor/lib64/libbluetooth_audio_session_qti.so|7a75ef5aba433004b63272f8927f2cfc6ba07416
+vendor/lib64/libbluetooth_audio_session_qti_2_1.so|d38aeceb4ec067c8992f5b48206b6093535d05c0
 vendor/lib64/libbt-hidlclient.so|fd202ec3a2bf6d35d4c41330ab0dd34f97f1af0e
 vendor/lib64/libbtnv.so|97a565f4ad7678525fe112e30e51bf754d02c5fa
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|3f81d703a5d1b635170b01f12b185b2215992df7
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|fff9d4896b3cfea0ca857788cedaac268da4778d
-
-# Bluetooth Audio - from LA.UM.9.12.r1-10800-SMxx50.0
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|7b858110fc095441bdec79215adabb03000dabce
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|84e96f1a573cd12e05550d8cf956e5a3c5b9021b
-
-# Bluetooth (aptX) - from sunfish RQ1A.201205.008
-system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
-system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|c0b04169a439717f8a9ba2e03a2d775dba8272c9
 
 # Capability Configstore - from LA.UM.9.12.r1-10800-SMxx50
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|0b729eef1d4e819db62fd771b66979eaee3566ef
@@ -310,8 +330,6 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so|61d7c35edb403f8de4be2e483431cb261
 system_ext/lib64/fm_helium.so|b2440e4feaae8a7f5e2269525520f9774b6962fc
 system_ext/lib64/libfm-hci.so|758c6e7cfafc964b5cd9d71806ec5455e0d78716
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so|5eaf6d5d67361ff6236c1ec4f5225c6185a904a6
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|05931b5d088bd7000b0b002ee650b0953e272cd7
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|f6e23f902b7e15232b20af55161a24da93ffe25f
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti

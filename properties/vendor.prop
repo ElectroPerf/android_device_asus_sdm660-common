@@ -1,6 +1,7 @@
 # Audio
 vendor.audio.adm.buffering.ms=6
 vendor.audio_hal.period_multiplier=2
+vendor.audio.feature.a2dp_offload.enable=true
 
 # Bluetooth
 persist.vendor.service.bdroid.sibs=false
