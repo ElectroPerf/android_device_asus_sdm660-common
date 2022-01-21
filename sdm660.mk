@@ -49,7 +49,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
+    vendor.qti.hardware.btconfigstore@2.0.vendor \
+    BluetoothQti \
+    libbthost_if \
+    libbluetooth_qti
 
 # Board Platform
 TARGET_BOARD_PLATFORM := sdm660
@@ -428,6 +431,7 @@ PRODUCT_COPY_FILES += \
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := \
     audio \
+    bt \
     gps \
     init \
     telephony
