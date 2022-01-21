@@ -79,7 +79,7 @@
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0::IBluetoothHci/default</fqname>
+        <fqname>@1.1::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth.audio</name>
@@ -89,7 +89,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.bluetooth_audio</name>
         <transport>hwbinder</transport>
-	<fqname>@2.0::IBluetoothAudioProvidersFactory/default</fqname>
+	<fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
     <!-- BTCONFIGSTORE -->
     <hal format="hidl">
