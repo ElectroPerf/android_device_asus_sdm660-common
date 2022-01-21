@@ -129,7 +129,6 @@ TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/properties/product.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/properties/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
-TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/properties/system_ext.prop
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -140,9 +139,6 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
-
-# RIL
-ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
