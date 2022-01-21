@@ -38,13 +38,13 @@ LOCAL_C_INCLUDES += \
     system/media/audio_utils/include \
     $(call include-path-for, audio-effects) \
     $(call include-path-for, audio-route) \
-    $(call project-path-for,qcom-audio)/hal \
-    $(call project-path-for,qcom-audio)/hal/msm8974 \
-    $(call project-path-for,qcom-audio)/hal/audio_extn \
-    $(call project-path-for,qcom-audio)/hal/voice_extn \
+    vendor/qcom/opensource/audio-hal/primary-hal/hal \
+    vendor/qcom/opensource/audio-hal/primary-hal/hal/msm8974 \
+    vendor/qcom/opensource/audio-hal/primary-hal/hal/audio_extn \
+    vendor/qcom/opensource/audio-hal/primary-hal/hal/voice_extn \
     $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
 
-LOCAL_HEADER_LIBRARIES := generated_kernel_headers
+LOCAL_HEADER_LIBRARIES := qti_kernel_headers
 LOCAL_SRC_FILES := audio_amplifier.c
 LOCAL_MODULE := audio_amplifier.sdm660
 LOCAL_MODULE_RELATIVE_PATH := hw
