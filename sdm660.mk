@@ -173,7 +173,7 @@ TARGET_KERNEL_VERSION := 4.19
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.asus_sdm660
+    lights.qcom
 
 # Media
 PRODUCT_PACKAGES += \
