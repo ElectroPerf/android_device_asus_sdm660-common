@@ -168,10 +168,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
-# IRQ
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
-
 # Kernel
 TARGET_KERNEL_VERSION := 4.19
 
@@ -273,8 +269,7 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
-    android.hardware.power.stats@1.0-service.mock \
-    vendor.qti.hardware.perf@2.0.vendor
+    android.hardware.power.stats@1.0-service.mock
 
 # Perf
 PRODUCT_COPY_FILES += \
@@ -298,10 +293,6 @@ PRODUCT_PACKAGES += \
 # QNS
 PRODUCT_PACKAGES += \
     libstdc++.vendor
-
-# QTI Performance
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -413,4 +404,5 @@ TARGET_COMMON_QTI_COMPONENTS := \
     gps \
     telephony \
     bt \
-    av
+    av \
+    perf
