@@ -54,6 +54,10 @@ ro.nfc.port=I2C
 # NTP Server
 persist.backup.ntpServer="0.pool.ntp.org"
 
+# Paranoid Doze
+ro.sensor.proximity=true
+ro.sensor.pickup=asus.sensor.pickup
+
 # QC framework value-adds
 ro.vendor.qti.va_aosp.support=1
 
