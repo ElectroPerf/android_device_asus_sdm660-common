@@ -1,0 +1,8 @@
+# b/148033913
+dontaudit fsck self:capability { kill sys_admin };
+
+# b/151195350
+dontaudit linkerconfig self:capability { kill sys_admin };
+
+dontaudit boringssl_self_test self:capability sys_admin;
+dontaudit vendor_boringssl_self_test self:capability sys_admin;
