@@ -32,4 +32,13 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+	<name>vendor.qti.hardware.servicetracker</name>
+	<transport>hwbinder</transport>
+	<version>1.2</version>
+        <interface>
+	    <name>IServicetracker</name>
+	    <instance>default</instance>
+	</interface>
+    </hal>
 </compatibility-matrix>
