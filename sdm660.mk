@@ -102,10 +102,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     android.frameworks.displayservice@1.0.vendor
 
-# Doze mode
-PRODUCT_PACKAGES += \
-    Doze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
@@ -244,6 +240,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aospa
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# Paranoid Doze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
 
 # Permissions
 PRODUCT_COPY_FILES += \

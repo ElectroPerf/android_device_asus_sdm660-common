@@ -13,7 +13,7 @@ Kernel  | 4.19.xxx
 
 ## Note
 
-Depends On: [Device Settings Resources](https://github.com/LineageOS/android_packages_resources_devicesettings) from [LineageOS](https://github.com/LineageOS)
+Depends On: [Doze Package](https://github.com/AOSPA/android_packages_apps_ParanoidDoze) from [Paranoid Android](https://github.com/AOSPA)
 
 ## Currently Supported Devices
 
