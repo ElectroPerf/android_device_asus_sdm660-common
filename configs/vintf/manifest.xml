@@ -184,7 +184,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.perf</name>
         <transport>hwbinder</transport>
-	<fqname>@2.0::IPerf/default</fqname>
+	<fqname>@2.2::IPerf/default</fqname>
     </hal>
     <!-- QTI RADIO -->
     <hal format="hidl">

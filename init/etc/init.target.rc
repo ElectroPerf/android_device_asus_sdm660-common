@@ -29,6 +29,7 @@
 
 import /vendor/etc/init/hw/init.asus.rc
 import /vendor/etc/init/hw/init.qcom.asus.rc
+import /vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 
 on early-init
     write /proc/sys/kernel/sched_boost 1
