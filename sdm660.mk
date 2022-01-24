@@ -398,10 +398,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
-# Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
-
 # FIXME: master: compat for libprotobuf
 # See https://android-review.googlesource.com/c/platform/prebuilts/vndk/v28/+/1109518
 PRODUCT_PACKAGES += \
@@ -440,4 +436,5 @@ TARGET_COMMON_QTI_COMPONENTS := \
     init \
     perf \
     telephony \
-    usb
+    usb \
+    vibrator
