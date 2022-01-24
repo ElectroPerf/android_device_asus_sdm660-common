@@ -356,14 +356,12 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qti.dcvs.sh \
     init.qcom.sensors.sh \
-    init.qcom.sh \
-    init.qcom.usb.sh
+    init.qcom.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.asus.rc \
     init.qcom.rc \
-    init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
@@ -448,4 +446,5 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     gps \
     perf \
-    telephony
+    telephony \
+    usb
