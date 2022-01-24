@@ -439,4 +439,5 @@ TARGET_COMMON_QTI_COMPONENTS := \
     gps \
     init \
     perf \
-    telephony
+    telephony \
+    usb
