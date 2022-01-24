@@ -241,9 +241,21 @@ vendor/lib64/libqdi.so|d69e4b4e69ffa1293cebdfddc1244a407d7b97dc
 vendor/lib64/libqdp.so|ec227b4fa051b2698d3042582c82560a42300bd9
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|f5ee5ed1bbe16e6c4809ea2b7c14c637ec9b8da3
 
-# Diag - LA.UM.9.12.r1-10800-SMxx50.0
+# Diag - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/lib/libdiag.so|6043713ca4b9f97110cb839b51b845bbe4c34440
 vendor/lib64/libdiag.so|a060dab58d6882c86520dfe6144b6d3fe042bd88
+
+# Display QTI - from LA.QSSI.11.0.r1-09900-qssi.0
+product/etc/permissions/com.qti.snapdragon.sdk.display.xml|4c71d110023088c6ea8072227c714416e2792d75
+-product/framework/com.qti.snapdragon.sdk.display.jar|9086ea19f1dc34fe47c19d1dfa8cbfe628816675
+-system_ext/app/colorservice/colorservice.apk|a7ea02c5024b03bb23488c527550e0e5c9ae70c3
+system_ext/lib64/libsd_sdk_display.qti.so|689b214dca8babb171dccd304a56eeffc2ebb02b
+system_ext/lib64/libsdm-disp-apis.qti.so|4cb0796ab9e03e0edf06283595ebfa97261fce1d
+system_ext/lib64/vendor.display.color@1.0.so|fd4ee6813ba629744e177f33e020e57434338670
+system_ext/lib64/vendor.display.color@1.1.so|fd95cb8def4df1eb1df78c1421b4332a4b0a7924
+system_ext/lib64/vendor.display.color@1.2.so|fb025ede8d2ea9bf0b7bcb3e797a6320d5d4f8be
+system_ext/lib64/vendor.display.color@1.3.so|31c4b1ff59e5f625b8a5bfc7e9da2a8738e0dd6c
+system_ext/lib64/vendor.display.postproc@1.0.so|1cb42d80681ab20d90282100fcb4dd883f93b8d6
 
 # DPM - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/bin/dpmQmiMgr|3ef49da6492ae9dec3d56ef3ff55c890c6a53d13
