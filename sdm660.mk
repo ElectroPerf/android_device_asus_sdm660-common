@@ -437,3 +437,13 @@ TARGET_COMMON_QTI_COMPONENTS := \
     telephony \
     usb \
     vibrator
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl \
+    libwfdaac \
+    libaacwrapper
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+

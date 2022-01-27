@@ -389,6 +389,19 @@
         <transport>hwbinder</transport>
 	<fqname>@2.1::IBiometricsFingerprint/default</fqname>
     </hal>
+    <!-- WIFI DISPLAY -->
+    <hal format="hidl">
+        <name>com.qualcomm.qti.wifidisplayhal</name>
+        <transport>hwbinder</transport>
+	<fqname>@1.0::IDSManager/wifidisplaydshal</fqname>
+	<fqname>@1.0::IHDCPSession/wifidisplayhdcphal</fqname>
+    </hal>
+    <!-- SIGMA MIRACAST -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.sigma_miracast</name>
+	<transport>hwbinder</transport>
+	<fqname>Isigma_miracast/sigmahal</fqname>
+    </hal>
     <!-- IWLAN -->
     <hal format="hidl">
         <name>vendor.qti.hardware.data.iwlan</name>
