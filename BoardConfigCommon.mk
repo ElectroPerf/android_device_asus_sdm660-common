@@ -117,9 +117,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 TARGET_COPY_OUT_VENDOR := vendor
 
-BOARD_ROOT_EXTRA_SYMLINKS := \
-    /mnt/vendor/persist:/persist
-
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
@@ -146,6 +143,9 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
+
+# Symlinks
+TARGET_MOUNT_POINTS_SYMLINKS := true
 
 # Treble
 BOARD_VNDK_VERSION := current
