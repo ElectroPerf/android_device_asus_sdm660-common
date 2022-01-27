@@ -479,6 +479,10 @@ vendor/lib64/libOmxWmaDec.so|5e066058c563101048e0ded7041cf4ad8ea63fe8
 vendor/lib64/libmm-color-convertor.so|d7404046e5863a87922b35c3ff3edc5e76d6c249
 vendor/lib64/libmmosal.so|595faff0767dc2bd0a344a98ab65a239bed14826
 
+# Mink-Lowi Interface daemon - from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
+vendor/bin/mlid|f161135c43cfcc68f25759459048ead4d8f16087
+vendor/lib64/libminksocket.so|f361474f9e23bbd6322ef9094039884ecfde03aa
+
 # NFC
 vendor/lib/libpn553_fw.so
 
