@@ -105,7 +105,6 @@ PRODUCT_PACKAGES += \
     memtrack.sdm660 \
     libdisplayconfig \
     libqservice \
-    libtinyxml \
     libqdutils \
     libqdMetaData \
     libqdMetaData.system \
