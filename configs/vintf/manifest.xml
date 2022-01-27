@@ -294,6 +294,12 @@
         <transport>hwbinder</transport>
 	<fqname>@1.0::IQSEECom/default</fqname>
     </hal>
+    <!-- QSPM HAL SERVICE -->
+    <hal format="hidl">
+        <name>vendor.qti.qspmhal</name>
+        <transport>hwbinder</transport>
+	<fqname>@1.0::IQspmhal/default</fqname>
+    </hal>
     <!-- QTEECONNECTOR HAL SERVICE -->
     <hal format="hidl">
         <name>vendor.qti.hardware.qteeconnector</name>
