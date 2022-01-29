@@ -133,7 +133,7 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/etc/fstab.qcom
 
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus

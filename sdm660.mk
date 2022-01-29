@@ -357,19 +357,14 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.btmac.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sh \
-    init.qcom.usb.sh
+    init.qcom.sensors.sh \
+    init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.msm.usb.configfs.rc \
+    init.asus.biometrics.rc \
     init.qcom.asus.rc \
-    init.qcom.rc \
-    init.qcom.usb.rc \
-    init.recovery.qcom.rc \
-    init.target.rc \
-    ueventd.qcom.rc
+    init.target.rc
 
 # Seccomp
 PRODUCT_COPY_FILES += \
@@ -445,3 +440,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+
+# QTI Components
+TARGET_COMMON_QTI_COMPONENTS := \
+    init
