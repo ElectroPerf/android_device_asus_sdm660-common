@@ -1,4 +1,4 @@
-# Copyright (c) 2013-2018, 2020 The Linux Foundation. All rights reserved.
+# Copyright (c) 2013-2018, 2020, 2021 The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are
@@ -26,6 +26,9 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 #
+
+import /vendor/etc/init/hw/init.asus.rc
+import /vendor/etc/init/hw/init.qcom.asus.rc
 
 on early-init
     write /proc/sys/kernel/sched_boost 1
@@ -77,7 +80,7 @@ on boot
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
-    #USB controller configuration
+    # USB controller configuration
     setprop vendor.usb.rndis.func.name "rndis_bam"
     setprop vendor.usb.rmnet.func.name "rmnet_bam"
     setprop vendor.usb.rmnet.inst.name "rmnet"
@@ -94,19 +97,17 @@ on property:vendor.usb.controller=*
     setprop sys.usb.controller ${vendor.usb.controller}
     write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
 
-#Peripheral manager
+# Peripheral manager
 service vendor.per_mgr /system/vendor/bin/pm-service
     class core
     user system
     group system
     ioprio rt 4
-    task_profiles ServiceCapacityLow
 
 service vendor.per_proxy /system/vendor/bin/pm-proxy
     class core
     user system
     group system
-    task_profiles ServiceCapacityLow
     disabled
 
 on property:init.svc.vendor.per_mgr=running
@@ -129,32 +130,45 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-send-rule stream 0660 system system
    group root
 
-service adsprpcd_root /vendor/bin/adsprpcd
-   class main
-   user media
-   group media
+service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
+    class core
+    user root
+    oneshot
 
-service adsprpcd /vendor/bin/adsprpcd audiopd
-   class main
-   user media
-   group media
+on early-boot
+    chown system system /mnt/vendor/persist/sensors
+    chown system system /mnt/vendor/persist/sensors/sns.reg
+    chown system system /mnt/vendor/persist/sensors/sensors_settings
+    chmod 0664 /mnt/vendor/persist/sensors/sensors_settings
 
-service vendor.cdsprpcd /vendor/bin/cdsprpcd
-   class main
-   user system
-   group system
-   task_profiles ServiceCapacityLow
-   disabled
+service vendor.sensors.qti /vendor/bin/sensors.qti
+    class core
+    user system
+    group system
+    disabled
 
 service vendor.pd_mapper /system/vendor/bin/pd-mapper
      class core
+
+on property:vold.decrypt=trigger_restart_framework
+   restart vendor.camera-provider-2-4
+   restart vendor.audio-hal
+
+service dcvs-sh /vendor/bin/init.qti.dcvs.sh
+    class late_start
+    user root
+    group root system
+    disabled
+    oneshot
+
+on property:vendor.dcvs.prop=1
+   start dcvs-sh
 
 service ppd /system/vendor/bin/mm-pp-dpps
     class late_start
     user system
     group system graphics
     socket pps stream 0660 system system
-    task_profiles ServiceCapacityLow
     disabled
 
 on property:init.svc.surfaceflinger=stopped
@@ -175,15 +189,7 @@ on property:init.svc.zygote=running
 on property:init.svc.zygote=restarting
     stop ppd
 
-on property:init.svc.vendor.charger=running
-    # Keep one LITTLE and one BIG
-    write /sys/devices/system/cpu/cpu1/online 0
-    write /sys/devices/system/cpu/cpu2/online 0
-    write /sys/devices/system/cpu/cpu3/online 0
-    write /sys/devices/system/cpu/cpu5/online 0
-    write /sys/devices/system/cpu/cpu6/online 0
-    write /sys/devices/system/cpu/cpu7/online 0
-
+on charger
     start qcom-post-boot
     start vendor.hvdcp_opti
     setprop vendor.usb.controller a800000.dwc3
@@ -194,4 +200,22 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
      class main
      user root
      group system wakelock
-     task_profiles ServiceCapacityLow
+
+service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
+    override
+    class hal
+    user audioserver
+    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
+    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct oem_2901 wakelock
+    capabilities BLOCK_SUSPEND
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
+    onrestart restart audioserver
+
+service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-service
+    override
+    class hal
+    user system
+    group system input wakelock uhid
+    capabilities BLOCK_SUSPEND
+    rlimit rtprio 10 10

@@ -562,6 +562,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 # QTI Components
+QTI_COMPONENTS += init
 QTI_COMPONENTS += wlan
 TARGET_COMMON_QTI_COMPONENTS := $(QTI_COMPONENTS)
 
@@ -618,19 +619,14 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.btmac.sh \
-    init.qcom.post_boot.sh \
-    init.qcom.sh \
-    init.qcom.usb.sh
+    init.qcom.sensors.sh \
+    init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.msm.usb.configfs.rc \
+    init.asus.biometrics.rc \
     init.qcom.asus.rc \
-    init.qcom.rc \
-    init.qcom.usb.rc \
-    init.recovery.qcom.rc \
-    init.target.rc \
-    ueventd.qcom.rc
+    init.target.rc
 
 # Seccomp
 PRODUCT_COPY_FILES += \
