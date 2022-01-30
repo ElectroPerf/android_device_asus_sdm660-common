@@ -55,7 +55,7 @@ TARGET_BOARD_PLATFORM := sdm660
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    camera.sdm660
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0 \
