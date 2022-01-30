@@ -63,7 +63,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    camera.sdm660 \
+    libgui_vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.common@1.0 \
