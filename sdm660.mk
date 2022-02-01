@@ -25,6 +25,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# Disable APEX compression
+PRODUCT_COMPRESSED_APEX := false
+
 # Input
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
