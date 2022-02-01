@@ -41,7 +41,7 @@
 
 typedef struct  {
   struct ion_fd_data ion_info_fd;
-  struct ion_allocation_data alloc;
+  struct ion_old_allocation_data alloc;
   int p_pmem_fd;
   size_t size;
   int ion_fd;
