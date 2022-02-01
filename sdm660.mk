@@ -7,6 +7,9 @@
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/sdm660-common/sdm660-common-vendor.mk)
 
+# Disable APEX compression
+PRODUCT_COMPRESSED_APEX := false
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
