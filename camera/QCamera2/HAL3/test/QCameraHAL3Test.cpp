@@ -95,7 +95,7 @@ camera3_capture_request QCameraHAL3Test::hal3appGetRequestSettings(
 native_handle_t *QCameraHAL3Test::allocateBuffers(int width, int height,
         hal3_camtest_meminfo_t *req_meminfo)
 {
-    struct ion_allocation_data alloc;
+    struct ion_old_allocation_data alloc;
     struct ion_fd_data ion_info_fd;
     int main_ion_fd = -1, rc;
     size_t buf_size;
