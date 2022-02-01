@@ -346,7 +346,7 @@ int QCamera3HeapMemory::allocOneBuffer(QCamera3MemInfo &memInfo,
 {
     int rc = OK;
     struct ion_handle_data handle_data;
-    struct ion_allocation_data allocData;
+    struct ion_old_allocation_data allocData;
     struct ion_fd_data ion_info_fd;
     int main_ion_fd = -1;
 

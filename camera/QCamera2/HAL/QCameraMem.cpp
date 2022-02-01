@@ -504,7 +504,7 @@ int QCameraMemory::allocOneBuffer(QCameraMemInfo &memInfo,
 {
     int rc = OK;
     int main_ion_fd = -1;
-    struct ion_allocation_data alloc;
+    struct ion_old_allocation_data alloc;
     struct ion_fd_data ion_info_fd;
 
 #ifndef TARGET_ION_ABI_VERSION
