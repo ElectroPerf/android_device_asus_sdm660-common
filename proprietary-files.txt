@@ -52,9 +52,13 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|4129558506dc078c03679ba362acda4755457742
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|dcfdc04b4e0c6e6a4ffa60e1694268bd0327e65c
 
-# ANT+ - from LA.UM.9.12.r1-10800-SMxx50.0
-vendor/lib/hw/com.dsi.ant@1.0-impl.so|0878e6b855e4b7495214bca404f13de9053b52f6
-vendor/lib64/hw/com.dsi.ant@1.0-impl.so|68131dd2db0df81301d390dc1412bfe7ee54915b
+# ANT+ - from S62Pro RKQ1.210406.002
+system_ext/lib/com.qualcomm.qti.ant@1.0.so|7d5c61562d046e6ba4950ccbeaecef4cafd3f1af
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so|a858cae6254eb94831c50ac3df1d2d2f1ec5a65c
+vendor/lib/hw/com.dsi.ant@1.0-impl.so|079573a7412736b6f2da827d16cdd12d34a4f6a6
+vendor/lib/com.dsi.ant@1.0.so|1b605523be5d375ee604289185cb0963613c3b44
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|87dc1a131534659173e71e108e7a3ffe6325845f
+vendor/lib64/com.dsi.ant@1.0.so|87778e4355d5f231f133934227059baaebb89dd4
 
 # Audio - from S62Pro RKQ1.210406.002
 vendor/lib/libacdb-fts.so|96db6fe2e443326705a37ac6e2e394f03144a386
@@ -95,7 +99,6 @@ vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|a0ad0c5fad68002cf387bc0
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|5757e26779f8a2714c06767fb2aa9307cf825aaa
 vendor/lib/hw/audio.bluetooth_qti.default.so|82cba590c4d051ca4a91ad1098ad1058a05d662f
-vendor/lib/hw/com.dsi.ant@1.0-impl.so|0878e6b855e4b7495214bca404f13de9053b52f6
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|cdc97c1e06642d39d49ec055a86896cf1bd3b4c1
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|a25ee727994d85091d6817f22fba4196181a9c79
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|61c91107a4032634f1520340e75f015e44fd8dbc
@@ -112,7 +115,6 @@ vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|fbce94fed6a22fd527506d14d10a
 vendor/lib/vendor.qti.hardware.fm@1.0.so|ec14a34ecae5061d674283499a812374c8be4ce5
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|50caf5267687060b01f7bf021dfed70eb70ac80c
 vendor/lib64/hw/audio.bluetooth_qti.default.so|8a9f099448ba368e819dc9bb5730396f7982d6ae
-vendor/lib64/hw/com.dsi.ant@1.0-impl.so|68131dd2db0df81301d390dc1412bfe7ee54915b
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|01d5106903316a61927ef8a41e2c02e59ead7e8a
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|e9af027bbc9468b3bc92bc80185a620f636a1e42
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|8b6412d4ec8b4d9885b8ab60d4ddd9e6987bb111
