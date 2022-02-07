@@ -21,7 +21,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.media\.c2@1\.0-service                                      u:object_r:mediacodec_exec:s0
 
 # Nvram
-/system/bin/nvram_btwifi                                                                                u:object_r:nvram_btwifi_exec:s0
+/(system_ext|system/system_ext)/bin/nvram_btwifi                                                        u:object_r:nvram_btwifi_exec:s0
 
 # Persist
 /persist(/.*)?												u:object_r:mnt_vendor_file:s0
@@ -29,7 +29,7 @@
 /mnt/vendor/persist/flag(/.*)?										u:object_r:persist_flag_file:s0
 
 # Scripts
-/(vendor|system/vendor)/bin/init\.btmac\.sh                                                             u:object_r:init-btmac-sh_exec:s0
+/(vendor|system/vendor)/bin/init\.btmac\.sh								u:object_r:init-btmac-sh_exec:s0
 
 # Sensors
 /sys/devices/virtual/input/input[0-9]+/stk3x[0-9]x-light(/.*)?						u:object_r:sysfs_sensors:s0

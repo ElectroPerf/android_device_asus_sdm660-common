@@ -11,7 +11,7 @@ on boot
     chown system system /proc/tpd_gesture
     chmod 0660 /proc/tpd_gesture
 
-service nvram_btwifi /system/bin/nvram_btwifi
+service nvram_btwifi /system_ext/bin/nvram_btwifi
     user root
     group system oem_2901
     oneshot
