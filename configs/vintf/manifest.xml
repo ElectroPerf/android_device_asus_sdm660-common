@@ -80,7 +80,7 @@
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0::IBluetoothHci/default</fqname>
+        <fqname>@1.1::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth.audio</name>
@@ -358,8 +358,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.embmssl</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0::IEmbms/embmsslServer0</fqname>
-        <fqname>@1.1::IEmbms/embmsslServer0</fqname>
+	<fqname>@1.1::IEmbms/embmsslServer0</fqname>
     </hal>
     <!-- target-level="3" manifest entries here -->
     <!-- CONFIGSTORE -->

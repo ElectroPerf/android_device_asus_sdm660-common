@@ -1,4 +1,5 @@
-# Copyright (c) 2017-2018,2020-2021 The Linux Foundation. All rights reserved.
+#! /vendor/bin/sh
+# Copyright (c) 2019, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -7,7 +8,7 @@
 #     * Redistributions in binary form must reproduce the above copyright
 #       notice, this list of conditions and the following disclaimer in the
 #       documentation and/or other materials provided with the distribution.
-#     * Neither the name of The Linux Foundation nor
+#     * Neither the name of Linux Foundation nor
 #       the names of its contributors may be used to endorse or promote
 #       products derived from this software without specific prior written
 #       permission.
@@ -25,16 +26,21 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on init
-    write /sys/class/backlight/panel0-backlight/brightness 200
-    setprop sys.usb.configfs 1
+LOG_TAG="SetBLUTMAC"
+logi ()
+{
+      /vendor/bin/log -t $LOG_TAG -p i "$@"
+}
 
-on property:ro.boot.usbcontroller=*
-    setprop sys.usb.controller ${ro.boot.usbcontroller}
-    wait /sys/bus/platform/devices/${ro.boot.usb.dwc3_msm:-a600000.ssusb}/mode
-    write /sys/bus/platform/devices/${ro.boot.usb.dwc3_msm:-a600000.ssusb}/mode peripheral
-    wait /sys/class/udc/${ro.boot.usbcontroller} 1
-
-on fs
-    wait /dev/block/platform/soc/${ro.boot.bootdevice}
-    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+unset BLUTMAC
+BLUTMAC=`getprop sys.nvram.btmac`
+if [ -z "$BLUTMAC" ]; then
+      logi "sys.nvram.btmac empty"
+else
+      # convert to mac from nvram_btwifi to proper format
+      final_blutmac=`echo $BLUTMAC | sed 's!^M$!!;s!\-!!g;s!\.!!g;s!\(..\)!\1:!g;s!:$!!'`
+      # set the bt mac to new vendor prop
+      setprop persist.vendor.service.bdroid.bdaddr $final_blutmac
+      log_msg="dervied BLUTMAC | $final_blutmac"
+      logi $log_msg
+fi
