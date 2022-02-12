@@ -11,9 +11,6 @@
 # (e.g. Google Camera App)
 /mnt/vendor/dsp/fastrpc_shell_3										u:object_r:public_adsprpcd_file:s0
 
-# Light HAL
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.asus_sdm660			u:object_r:hal_light_default_exec:s0
-
 # CNE
 /(vendor|system/vendor)/bin/mutualex                                                                    u:object_r:vendor_mutualex_exec:s0
 
