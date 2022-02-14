@@ -385,6 +385,13 @@ vendor/lib64/vendor.qti.gnss@3.0.so|d6ff647eef199f6a2f652679c13d74d06862e582
 vendor/lib64/vendor.qti.gnss@4.0-service.so|6d006555dce2da619f394b42e24104d76f79f36e
 vendor/lib64/vendor.qti.gnss@4.0.so|88572c990fcb80eec8b336fb0630f395142cc20d
 
+# GNSS Configs - from UL-ASUS_X01BD-WW-17.2018.2004.424-user
+vendor/etc/apdr.conf|b43b3d32d442436945c36fddcf2259021d98c324
+vendor/etc/izat.conf|11ae882b61d176c4a2ebb83cd38dd1f831926641
+vendor/etc/lowi.conf|619d096c1f0712e20bd1f917e390fa2404f24b43
+vendor/etc/sap.conf|afbcbacb367b2fcc05efcad76ef096d794e768ba
+vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
+
 # Graphics (SDM) - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/lib/libqseed3.so|44f99b99b831227491e320a3098c8defe8df0781
 vendor/lib64/libqseed3.so|6779aaf96283e244122f4cc76cd3cb750ff14ed5
