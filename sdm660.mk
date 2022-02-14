@@ -402,7 +402,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
     perf \
     telephony \
     usb \
-    vibrator
+    vibrator \
+    wlan
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -523,17 +524,10 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
     android.hardware.wifi@1.5.vendor \
-    hostapd \
-    hostapd_cli \
-    libwifi-hal-qcom \
     TetheringConfigOverlay \
-    wificond \
     libwpa_client \
-    WifiOverlay \
-    wpa_supplicant \
-    wpa_supplicant.conf
+    WifiOverlay
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
