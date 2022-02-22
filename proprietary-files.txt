@@ -36,8 +36,6 @@ vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
 vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|57eff075eaf7a9fb9260f6cf5b918b2e7495fc6f
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|ec30ec22f831fc9d755f653d9ae336bcbbcd82bf
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
-vendor/lib/rfsa/adsp/libscveT2T_skel.so|e8083e551a17e880acb9d72ceb725b762cadf0d2
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so|2da97f61c1d14f1f9a38aecd8ab89a1f6fa8d991
 
 # ADSP Modules (AptX)
@@ -61,6 +59,7 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so|87dc1a131534659173e71e108e7a3ffe6325845f
 vendor/lib64/com.dsi.ant@1.0.so|87778e4355d5f231f133934227059baaebb89dd4
 
 # Audio - from S62Pro RKQ1.210406.002
+vendor/bin/audioflacapp|7f75e93e6524528d6f19c2955183ecf525ac3d64
 vendor/lib/libacdb-fts.so|96db6fe2e443326705a37ac6e2e394f03144a386
 vendor/lib/libacdbloader.so|4d0743fe7f3eb1d2318feafc06363ffb527ca942
 vendor/lib/libacdbrtac.so|b6484ac64f20c4a0f605fb4901d33b8b27a95a74
@@ -68,31 +67,34 @@ vendor/lib/libadiertac.so|b0a0ebc89be729e37fe34ceaa05f97a1bc9560a6
 vendor/lib/libadm.so|2fd429c8066572cc49262fe0d452c78706197d54
 vendor/lib/libaudcal.so|5361c538d20634221c317851c33b0842ced93fca
 vendor/lib/libaudioalsa.so|e54da6926b0e284a7a89a6a636003cf562ff53db
+vendor/lib/libaudioconfigstore.so|f3e57eb5bc455d55f707139bcc3e69e782098809
 vendor/lib/libaudioparsers.so|9a998d072d1bcfe7ce9ca0a4e7a4a38a66318ee6
 vendor/lib/libdrc.so|95ae02c1c274e9407b992587b8bb0ff39a08f34e
 vendor/lib/libhdmipassthru.so|097e4a0eabbd4e455377baef4b9493442b861055
 vendor/lib/libqtigef.so|977cbb704f6b2bae7f4e2f17b8c15146a6cacffb
-vendor/lib/libssrec.so|2e06834d12daab407d34bffad0cc8192d069b706
+vendor/lib/libsurround_3mic_proc.so|08fe1c31126be9aeb50d37fbdc9192f3f16279ef
 vendor/lib64/libacdb-fts.so|436bc68b1de28716607e5c8445b60dd21f56a5d2
 vendor/lib64/libacdbloader.so|f0c47deb5cabfc7e7922e31c74d9913a78f062fe
 vendor/lib64/libacdbrtac.so|621360f8363fd5e55ea9cd0f4c8f216397ff900c
 vendor/lib64/libadiertac.so|2a529d2fee97919b0bfb1f94854bf01845c3fdf7
 vendor/lib64/libaudcal.so|2e89c718670a9772ff90ed2739a42626b977dc39
 vendor/lib64/libaudioalsa.so|361b3de1f094cc0943add1ef7040ffeadc5dbdcb
+vendor/lib64/libaudioconfigstore.so|781b4f6141a9066327ed7589613ae2546fdad8e9
 vendor/lib64/libaudioparsers.so|c0c3f1e2eafac1194334fd85dfcdb7e398a2c6c2
 vendor/lib64/libhdmipassthru.so|f6e46857a65a39214a09838f1b37a82926a485c6
 vendor/lib64/libqtigef.so|cdbc8eb095afddd0f990c972cd8c1b2b4e7e9cd7
-vendor/lib64/libssrec.so|0c744218cb46817b288017b363720f08c791cf00
 
 # Audio FX modules - from S62Pro RKQ1.210406.002
 vendor/lib/soundfx/libasphere.so|90940fca6f4b84794046513c6c6868eca9470066
 vendor/lib/soundfx/libqcbassboost.so|8e92c5d40cd23f503840b055d71336e4c9daecc0
 vendor/lib/soundfx/libqcreverb.so|7e05f1f4bdd2947dac3aefd871437d289581078b
 vendor/lib/soundfx/libqcvirt.so|03a8b95eb77811e3861307ab1451f4144bba2572
+vendor/lib/soundfx/libshoebox.so|ecf66dc4877142fb2d903429f4968088c9b7a129
 vendor/lib64/soundfx/libasphere.so|b9296f601776e631be0f347f8f10d26689103d12
 vendor/lib64/soundfx/libqcbassboost.so|c7848527250aadbebf3678f7a4dabaa626ff0592
 vendor/lib64/soundfx/libqcreverb.so|3757e8f881b812a9dd15745ea3970cc503c1fe2e
 vendor/lib64/soundfx/libqcvirt.so|87e373b19ef8afed1f087571136b37c3a8d452c0
+vendor/lib64/soundfx/libshoebox.so|37c60f9b0c8d451e118c351215f8234d7f6b82af
 
 # Bluetooth - from S62Pro RKQ1.210406.002
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|07d96d0d3c4a500b14ea3c97e02b9eb5ee2bbc4d
@@ -104,7 +106,6 @@ vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|54479a9db73b61be34
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|cc9d165040040a179feb8e805cc9f8c2572d7e99
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|4d23e123ffe1603c14e81aa5342d2705278ab423
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|c208937b7ebbeda5c450d9febb26802dbdf19fd7
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|d70fd3dc8a12d778d538952710f96b82277c4a20
 vendor/lib/btaudio_offload_if.so|752c3e774c1585f7842ecbd85180365d85fc789f
 vendor/lib/libbluetooth_audio_session_qti.so|9a86488113e10594e0a3d4a36b436c6b7fd59317
 vendor/lib/libbluetooth_audio_session_qti_2_1.so|d9f83086774e22c8a09b02fa87850fae7382fdf1
@@ -112,7 +113,6 @@ vendor/lib/libbt-hidlclient.so|97b7ab1856183e684f94de089863357d1f391e8a
 vendor/lib/libbtnv.so|753252c216e48b154869197cefd512a066e30f5c
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|1cbc952b766df6aa9e047bd70c45ef73b6ddefdf
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|a12a7150bae59162de8cf1d0708f1d05119002af
-vendor/lib/vendor.qti.hardware.fm@1.0.so|aad3ef11a2fa41bb5a2bf25f8960c53ac3e0f8a4
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|c6be436d0f66aafd5be3aa51431d4fc02c50971d
 vendor/lib64/hw/audio.bluetooth_qti.default.so|e5f1e800b423d026070c263e6d1120ca9665c427
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|8bfbc542d600d4986b7c42281ffccfa75094ca5b
@@ -120,7 +120,6 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|66547bbe6adc68fa
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|156ec51ccb53f667605cf99422abf9357888b4b6
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|3097cb00777c2911cff40e323ce3c921923722d8
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|cfc982fd153084781f540bcc4a31b6b05a9ced19
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|05931b5d088bd7000b0b002ee650b0953e272cd7
 vendor/lib64/btaudio_offload_if.so|c2bdf81405cd78c382b6bef5b54d4fbc3fcb610d
 vendor/lib64/libbluetooth_audio_session_qti.so|2522b02b4da4411513fb7ffc404a36bbdf32df6f
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so|3fa42d26b85d291364933c05b8f4a6bc077e531d
@@ -128,7 +127,6 @@ vendor/lib64/libbt-hidlclient.so|ff301380cf3c0ff68d2b7fcda3ba428ebf0a859e
 vendor/lib64/libbtnv.so|0c74a43550b939b9496b03b3285fa950cf560c48
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|23706dcfa35cc6f7dee934e13886c19a56a9aa12
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|ece3dafc4447e8302109851c3a6b0d3978b3506d
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|f6e23f902b7e15232b20af55161a24da93ffe25f
 
 # Capability Configstore - from S62Pro RKQ1.210406.002
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|81be3e1c39280c1bed769ff4e3bee25b4ef1195e
@@ -210,7 +208,6 @@ vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|727e889af4519d4566af8dd7
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|c1515e1a8f060dc834e7189deb0e0b43e57e7f5b
 vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so|43b4fa65e294070acf46d1733e9507d45e8213e0
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|878f819218e155fec02125f81715d2321b3ca64e
-vendor/lib64/vendor.qti.latency@2.0.so|ab1775138a2bf0587cd6cc990a432e0ad7dc2379
 
 # Connection Security - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/bin/ssgqmigd|5769f2aef8fdf48f55b01e3d7d3d1aecb860d7e1
@@ -330,6 +327,13 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so|61d7c35edb403f8de4be2e483431cb261
 system_ext/lib64/fm_helium.so|b2440e4feaae8a7f5e2269525520f9774b6962fc
 system_ext/lib64/libfm-hci.so|758c6e7cfafc964b5cd9d71806ec5455e0d78716
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so|5eaf6d5d67361ff6236c1ec4f5225c6185a904a6
+vendor/bin/fm_qsoc_patches|9123745fdde4b3bbad7ae2048c4b605ce555075f
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|d70fd3dc8a12d778d538952710f96b82277c4a20
+vendor/lib/ftm_fm_lib.so|de382bae22c1e5d2efb2754caa2f4dfedd12a993
+vendor/lib/vendor.qti.hardware.fm@1.0.so|aad3ef11a2fa41bb5a2bf25f8960c53ac3e0f8a4
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|05931b5d088bd7000b0b002ee650b0953e272cd7
+vendor/lib64/ftm_fm_lib.so|df09a79437966fd5c1b901c91841d5df48dc70c7
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|f6e23f902b7e15232b20af55161a24da93ffe25f
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -337,37 +341,27 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GNSS - from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
-vendor/bin/hw/android.hardware.gnss@2.1-service-qti|1ec6390ea7a2fb339d0758ccd92f5fcc3e3aa982
 vendor/bin/loc_launcher|f0b95b7d523d2785a3090c2598c4bbd6170f1ba1
 vendor/bin/lowi-server|41cc5deda4cdf3696ed6c0bdd410b20513601185
 vendor/bin/slim_daemon|c6404a00c2706302ea1438dfc66a181a7f4f6b90
 vendor/bin/xtra-daemon|8396b9288db9b11bbd38b40ca6cbf3e6434f8a7d
 vendor/bin/xtwifi-client|8a86b89db663a6ac3cdbe8f9f820af58cfef20fd
 vendor/bin/xtwifi-inet-agent|4aabf2e71422b105a76a3064175b2399cb89fc4e
-vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|d3844699c845ce5de4c8b50548a2095f92dd0235
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml|1c344aacaa6d17a1585ba58b2e6d438dcfe31fad
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
 vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
-vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so|719990fe6bb6a5f1c64eccf74a0e675e6873e3f0
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|3b204d6b9dbd89a82ca6bcf0cf360a95230c16cf
 vendor/lib64/libaoa.so|6aacf99d44a05c80bf77ee01ac21da20ce98368d
-vendor/lib64/libbatching.so|251da9d0cd646f46668bfb54102a3653df6b7a91
 vendor/lib64/libcacertclient.so|d73c1651d2a66a595a65edc43d5605501bc2fd73
 vendor/lib64/libdataitems.so|9b344d4f91166cf6c9ccd0acceb5df08c9c4c650
 vendor/lib64/libgdtap.so|500675e4bee26627cda1f1cc87b8a6838f65b7a7
-vendor/lib64/libgeofencing.so|64f096ffaf9b69b74902944fd761b494a183012a
-vendor/lib64/libgnss.so|829900523f59c4dec87215066573cc3a4b5ba490
 vendor/lib64/libgnsspps.so|fe828f1be73b674601f2be29c41aca0de32c0dea
-vendor/lib64/libgps.utils.so|267b16cf6e2bbba7175d6bb830b33046bcdc8cf7
 vendor/lib64/libizat_client_api.so|4a982ffe253557b58934df0e9278f97fef5862f2
 vendor/lib64/libizat_core.so|db10fcf7de83d84838b6bcded5e4b5ef2f7ccf7d
 vendor/lib64/libjnihelper.so|3070cc2164619a58684b6f4061c3318e135cc3f1
 vendor/lib64/liblbs_core.so|6fc99286d08d4859c818f5977e076ce4df44840b
 vendor/lib64/libloc_api_v02.so|65c068728d1646802c819f7495956ebe5ef23b2b
-vendor/lib64/libloc_core.so|e89aaef39650306356bc9bef28f1b7e01d8ea0c3
 vendor/lib64/libloc_socket.so|d5ce9f5403a34fb826b86fe68e9b07f64bfabcab
-vendor/lib64/liblocation_api.so|4c479c702393bfd1f74b1d47501cd98011455939
 vendor/lib64/liblocationservice.so|14c54d0f04e88cc7fe7f3dac68c866599f60fc78
 vendor/lib64/liblocationservice_glue.so|5087838ca49c474063785ad361d35f2cead2c873
 vendor/lib64/liblowi_client.so|a4ec2ce9d63900e94601b848df26b655b8116f04
@@ -668,13 +662,48 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|d047741471536342cb577914d9fd6b0f12a
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|1a3fdc8643a3a48e05cc0ab701facf214e29bb55
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|cde0ea7b6306be140510fea42f7d6f4fedb859b0
 
-# Latency - from LA.UM.9.12.r1-10800-SMxx50.0
-vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|c7267852e7539ec85cce18ee04d7cffa97e7027f
+# Latency - from S62Pro RKQ1.210406.002
+system_ext/lib/vendor.qti.hardware.data.latency@1.0.so|ac3d34305a9e1064118a7d8d9588203e9fa0f7c4
+system_ext/lib/vendor.qti.latency@2.0.so|3ead3f8a29b16f8e2d663cf7c2e5adf2eaabe5e3
+system_ext/lib64/vendor.qti.hardware.data.latency@1.0.so|16b0273612a833617d1aff80cc24933fc7f9006c
+system_ext/lib64/vendor.qti.latency@2.0.so|52058b376a37c99bfe67da8e83ab36a1e72972b1
+vendor/lib/vendor.qti.hardware.data.latency@1.0.so|ee04ade363820474bdca9d27f39347b1dd5ab1b7
+vendor/lib/vendor.qti.latency@2.0.so|20e0f6643b353e4f60d9f3172914adbe842feb3d
+vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|c433c73b5469b787cb7fb70b05b83190b319edd6
+vendor/lib64/vendor.qti.latency@2.0.so|60ab3143325e855f8c72e3f603c28efe2e7227b9
 
 # PD - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/bin/pd-mapper|25b0f683607ee50ed769e75fb499f70f58af9474
 vendor/lib64/libpdmapper.so|9c11a6b00893b0976e03dac79649942db178734d
 vendor/lib64/libpdnotifier.so|1f789b879a7ca8454283de6572af10fdecd9a077
+
+# SCVE - from S62Pro RKQ1.210406.002
+system_ext/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so|e529e9bcc7152d2e62245dbb780ede1561738989
+system_ext/lib/vendor.qti.hardware.scve.objecttracker@1.0.so|67f5dd9b3e0c96cc9b2882e50c026f47e5739fd8
+system_ext/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so|6bfa10623b4522207199f7b43dd2095693d448af
+system_ext/lib/vendor.qti.hardware.scve.panorama@1.0.so|f2c245a03e122c2f1f17378731f353f71eac70b4
+system_ext/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so|ba33fbd014f6b75d25a738a8f165ec86551ebb24
+system_ext/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|89846dbd134079bf8362aca9f1fb0b59f46aa122
+system_ext/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so|ee7305d85a79b0f7c9973727c2683edfa6b8a45f
+system_ext/lib64/vendor.qti.hardware.scve.panorama@1.0.so|1abd56f16bc94286a54fa7bea21e740cb0252501
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|e8083e551a17e880acb9d72ceb725b762cadf0d2
+vendor/lib/libscveCommon.so|38c596b90b0e5f28ed3191db7dbd9af14e7d2ac5
+vendor/lib/libscveCommon_stub.so|0a7d0e7439b1f9bdfc55c8a9473b17044a924bfa
+vendor/lib/libscveObjectSegmentation.so|06f61f0c0da765924256b6e52583a6d2eb538ac5
+vendor/lib/libscveObjectSegmentation_stub.so|400aed1d65dcb81085e133ce252104f27331642d
+vendor/lib/libscveObjectTracker.so|fbba8eb2cfe1116b2669332e8b841b51d6d41ca4
+vendor/lib/libscveObjectTracker_stub.so|d35122035aa0ddb52dae408ed415d8db692a1c9d
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so|1331269fb53f9048b4d4d0627978cf8b69c7f33b
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so|89278a73cf8e276af770c89019dee1a356b4d4d6
+vendor/lib64/libscveCommon.so|1603e11f268390739f9d0297ab0b8e84886becab
+vendor/lib64/libscveCommon_stub.so|bcf566f120b795ef6fe85450298475b56e7c9659
+vendor/lib64/libscveObjectSegmentation.so|1598ad3797897eb3331a545c74d937c0ae0aeddf
+vendor/lib64/libscveObjectSegmentation_stub.so|f5d9974c11db8921d8e5d6528c8c39719cec0569
+vendor/lib64/libscveObjectTracker.so|7df26ae466c70db7bbc72b1d242c1f3f983b668e
+vendor/lib64/libscveObjectTracker_stub.so|6f45aa215de07dfeacf811c06af750206bb1cf58
+vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|7321c6e2edac211e085d08fe52aea5ced0e5f0ac
+vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so|cf6b6d647f98448f234f5d115c0a02651e9f8f82
 
 # Sensors - from S62Pro RKQ1.210406.002
 -system_ext/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar|01d8f70b5687082dd9d19beca565a789d404837c
