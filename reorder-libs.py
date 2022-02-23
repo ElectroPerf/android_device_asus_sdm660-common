@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2022 Paranoid Android
 #
 # SPDX-License-Identifier: Apache-2.0
 #
