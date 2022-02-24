@@ -91,4 +91,8 @@ void vendor_load_properties()
     property_override("dalvik.vm.heaptargetutilization", heaptargetutilization);
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
+    property_override("persist.vendor.audio.fluence.voicerec", "true");
+    property_override("persist.vendor.audio.fluence.speaker", "false");
+    property_override("ro.vendor.audio.sdk.fluencetype", "fluence");
+    property_override("vendor.audio.feature.compr_voip.enable", "true");
 }
