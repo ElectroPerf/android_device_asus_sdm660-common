@@ -335,11 +335,11 @@ PRODUCT_PACKAGES += \
     libc2dcolorconvert
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aospa
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    AsusSDM660Bluetooth \
+    AsusSDM660Settings \
+    AsusSDM660SystemUI \
+    FrameworksResTarget
 
 # Paranoid Doze
 PRODUCT_PACKAGES += \
@@ -399,6 +399,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     gps \
     init \
     media-legacy \
+    overlay \
     perf \
     telephony \
     usb \
@@ -525,9 +526,7 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.5.vendor \
-    TetheringConfigOverlay \
-    libwpa_client \
-    WifiOverlay
+    libwpa_client
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
