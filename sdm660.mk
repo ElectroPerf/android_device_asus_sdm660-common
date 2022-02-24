@@ -337,6 +337,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     AsusSDM660Bluetooth \
+    AsusSDM660Frameworks \
     AsusSDM660Settings \
     AsusSDM660SystemUI \
     FrameworksResTarget
