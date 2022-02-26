@@ -542,6 +542,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Wifi Display
+PRODUCT_PACKAGES += \
+    libnl \
+    libwfdaac \
+    libwfdaac_vendor \
+    libaacwrapper
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.wfd.virtual=0 \
     persist.debug.wfd.enable=1
