@@ -491,6 +491,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.1.vendor \
     vendor.qti.hardware.servicetracker@1.2.vendor \
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_wfd
+
 # SoC Information
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.model=SDM660 \
