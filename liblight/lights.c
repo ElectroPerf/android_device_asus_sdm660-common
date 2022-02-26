@@ -68,6 +68,9 @@ char const*const GREEN_BREATH_FILE
 char const*const PERSISTENCE_FILE
         = "/sys/class/graphics/fb0/msm_fb_persist_mode";
 
+static int PANEL_MAX_BRIGHTNESS = 2047;
+static int USERSPACE_MAX_BRIGHTNESS = 255;
+
 /**
  * device methods
  */
@@ -115,11 +118,20 @@ rgb_to_brightness(struct light_state_t const* state)
 }
 
 static int
+scale_brightness(int brightness)
+{
+    if (brightness == 0)
+        return 0;
+
+    return (brightness - 1) * (PANEL_MAX_BRIGHTNESS - 1) / (USERSPACE_MAX_BRIGHTNESS - 1) + 1;
+}
+
+static int
 set_light_backlight(struct light_device_t* dev,
         struct light_state_t const* state)
 {
     int err = 0;
-    int brightness = rgb_to_brightness(state);
+    int brightness = scale_brightness(rgb_to_brightness(state));
     unsigned int lpEnabled =
         state->brightnessMode == BRIGHTNESS_MODE_LOW_PERSISTENCE;
     if(!dev) {
