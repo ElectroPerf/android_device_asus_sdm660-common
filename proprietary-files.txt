@@ -1,40 +1,38 @@
 # Common proprietary files - from UL-ASUS_X01BD-WW-17.2018.2012.434-user build, unless pinned
 
-# ADSP Modules
-vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
-vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
-vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so
-vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so
-vendor/lib/rfsa/adsp/libadsp_fd_skel.so
-vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
-vendor/lib/rfsa/adsp/libadsp_hvx_skel.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
+# ADSP - from LA.UM.10.2.1.r1-03400-sdm660.0
+vendor/bin/adsprpcd|5e246a6f5d2dca27e29b233a17e4673532191b95
+vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
+vendor/lib/libadsp_default_listener.so|fca7bb26dc4f16d29eb9fe8373f6679de72143e4
+vendor/lib/libadsp_hvx_callback_skel.so|349803cd69d676e386b2a923c128c49aeefdeb4a
+vendor/lib/libadsp_hvx_stub.so|59e9f81b8d3a41a69badf201acee57615f822013
+vendor/lib/libadsprpc.so|3da7471cbfb2f26bb997d21098282697ee1965e4
+vendor/lib/libfastcvadsp_stub.so|6e9d2b6e08188daba1d2f96ab708146391594280
+vendor/lib/libfastcvopt.so|3d39db85c2102cba15eac2db06027464518f7704
+vendor/lib/libmdsprpc.so|50380552c78713d9678978b6654c20401b5040f6
+vendor/lib/libsdsprpc.so|dcff191dcb9af4cc6f9a54c4eca6664bf6f965a4
+vendor/lib64/libadsp_default_listener.so|f4738e7bf0d5205e9d3b5e290a931d03d2ef700d
+vendor/lib64/libadsprpc.so|14348488a9d8a30f6787d5b11bf4d4857d23e58e
+vendor/lib64/libfastcvadsp_stub.so|3de1763ac58a705dfba9b517169ee2683699eb7c
+vendor/lib64/libfastcvopt.so|936f2bb6da055ec80aacd48253ea8fa885844641
+vendor/lib64/libmdsprpc.so|d0252bb9747bb90cbb7e8788a9906ecbed44cb60
+vendor/lib64/libsdsprpc.so|58ee0bd2d4b5c40afeb7d654dd020f09676fe9d9
 
-# ADSP
-vendor/bin/adsprpcd
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libadsp_hvx_callback_skel.so
-vendor/lib/libadsp_hvx_stub.so
-vendor/lib/libadsprpc.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib/libfastrpc_utf_stub.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libfastcvadsp_stub.so
-vendor/lib64/libfastcvopt.so
-vendor/lib64/libfastrpc_utf_stub.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
+# ADSP modules - from LA.UM.10.2.1.r1-03400-sdm660.0
+vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so|f4d8675a46c5e52add8f8e90e35b29cd33ac582b
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so|c240d45c3a5fc37b964c4adab06f4cb0bfda62f5
+vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so|b9f68e320d24e9c51871a2056e1f47239bd1cb40
+vendor/lib/rfsa/adsp/libadsp_fd_skel.so|677d2932dac248049f031fc5893163e22b49439a
+vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so|26fb64a92d48e801a31a867976d325efa366a255
+vendor/lib/rfsa/adsp/libadsp_hvx_skel.so|05776246445316aea822eaa9cb6ae7a47b23c9aa
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|fd362c6b0e30f62cc3fc4566855f46706d2c3c50
+vendor/lib/rfsa/adsp/libdspCV_skel.so|a788855fe98d5f6ea73d2693c983efb29165eae1
+vendor/lib/rfsa/adsp/libfastcvadsp.so|603711dc1af1f1952d8978a5b494b1541b24c54c
+vendor/lib/rfsa/adsp/libfastcvadsp_skel.so|57eff075eaf7a9fb9260f6cf5b918b2e7495fc6f
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|ec30ec22f831fc9d755f653d9ae336bcbbcd82bf
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|d2174a2a4a680e93ee4262b5e6d99fd3c398620c
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|e8083e551a17e880acb9d72ceb725b762cadf0d2
+vendor/lib/rfsa/adsp/libvpp_svc_skel.so|2da97f61c1d14f1f9a38aecd8ab89a1f6fa8d991
 
 # ANT+ - from ddv_sprout 11-RKQ1.210607.001-00WW_3_440-release-keys
 vendor/lib/hw/com.dsi.ant@1.0-impl.so|079573a7412736b6f2da827d16cdd12d34a4f6a6
@@ -48,15 +46,43 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|4129558506dc078c03679ba362acda4755457742
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|dcfdc04b4e0c6e6a4ffa60e1694268bd0327e65c
 
-# Audio libraries
-vendor/lib/soundfx/libasphere.so
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libadm.so
-vendor/lib/libaudcal.so
-vendor/lib/libqtigef.so
+# Audio - from LA.UM.10.2.1.r1-03400-sdm660.0
+vendor/bin/audioflacapp|7f75e93e6524528d6f19c2955183ecf525ac3d64
+vendor/lib/libacdb-fts.so|cfc0d3d510217bf9a642ac909a16716b1e1c2f39
+vendor/lib/libacdbloader.so|4740e87da7764fd8171e22c4b87e59d014f9e1c6
+vendor/lib/libacdbrtac.so|463d2f8703845ae991cffac0848ca3b0b2330281
+vendor/lib/libadiertac.so|7ab387ed153bbce55f150da6760563874dcf051e
+vendor/lib/libadm.so|2fd429c8066572cc49262fe0d452c78706197d54
+vendor/lib/libaudcal.so|1d4976b6a42f7dd31d09a61f009c1674b5caeab5
+vendor/lib/libaudioalsa.so|58a0d04ca4e845eb2b257a9a4a996427a1e8722c
+vendor/lib/libaudioconfigstore.so|1a752baf972930007e6b10a64bbcebe14b7cb6a5
+vendor/lib/libaudioparsers.so|bc02240aa70e41ba85da6f04541d6bc599982b4b
+vendor/lib/libdrc.so|95ae02c1c274e9407b992587b8bb0ff39a08f34e
+vendor/lib/libhdmipassthru.so|8357a37b262802b87ac2f69cbb5f72ffa4f95a34
+vendor/lib/libqtigef.so|76107629ebf7089b8836deec0b23cde792164487
+vendor/lib/libsurround_3mic_proc.so|08fe1c31126be9aeb50d37fbdc9192f3f16279ef
+vendor/lib64/libacdb-fts.so|e37edcbc772e33f0790684085d410b05a3b26a8f
+vendor/lib64/libacdbloader.so|57087b898b5ebe26464bc618aa0bacbb6e2ecbbd
+vendor/lib64/libacdbrtac.so|6117692194c95f019955342d5263822c016f17b0
+vendor/lib64/libadiertac.so|ec4073d8c9af03a6a2ee9e3fa8e43c66d390d1b6
+vendor/lib64/libaudcal.so|7a81bf842644e9410ee32f7154f8cb27be7b5b24
+vendor/lib64/libaudioalsa.so|c0476e09a6a722fbe09b8b36e75eec5d7c521187
+vendor/lib64/libaudioconfigstore.so|34777cc3ff62a2975c4c9c9b5b2732f7282ecc4a
+vendor/lib64/libaudioparsers.so|762919b5100cf203038b36dcee1f705c7b889dfc
+vendor/lib64/libhdmipassthru.so|19772c514c09be253316459992839d271e9f1918
+vendor/lib64/libqtigef.so|d67d34d56a64dd68c9968ee506bda77c987917c0
+
+# Audio FX modules - from LA.UM.10.2.1.r1-03400-sdm660.0
+vendor/lib/soundfx/libasphere.so|90940fca6f4b84794046513c6c6868eca9470066
+vendor/lib/soundfx/libqcbassboost.so|aac5bea9960c11c55034cea185727578f77dd99f
+vendor/lib/soundfx/libqcreverb.so|43351be2315d6f5abe56bb04ccde694fc8c9c973
+vendor/lib/soundfx/libqcvirt.so|275210f123115e4812ab7fa6b1b0da0cc23bceb9
+vendor/lib/soundfx/libshoebox.so|ecf66dc4877142fb2d903429f4968088c9b7a129
+vendor/lib64/soundfx/libasphere.so|b9296f601776e631be0f347f8f10d26689103d12
+vendor/lib64/soundfx/libqcbassboost.so|422a9131a6fad4aedcd67e69add14539903b64a5
+vendor/lib64/soundfx/libqcreverb.so|704c794e2d8b50b3a65c1a3558575a1ff444f8b5
+vendor/lib64/soundfx/libqcvirt.so|4f9ef1fc680a39cd80902a5745ad67612f69c3a4
+vendor/lib64/soundfx/libshoebox.so|37c60f9b0c8d451e118c351215f8234d7f6b82af
 
 # Bluetooth (aptX) - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
@@ -74,14 +100,17 @@ vendor/lib64/libbtnv.so|0c74a43550b939b9496b03b3285fa950cf560c48
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|23706dcfa35cc6f7dee934e13886c19a56a9aa12
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|ece3dafc4447e8302109851c3a6b0d3978b3506d
 
-# CDSP
-vendor/bin/cdsprpcd
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libsysmon_cdsp_skel.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libsysmon_cdsp_skel.so
+# CDSP - from LA.UM.10.2.1.r1-03400-sdm660.0
+vendor/bin/cdsprpcd|ea126ed2f1b11622547239f331b8013320c59ad2
+vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
+vendor/lib/libcdsp_default_listener.so|c280d84c9cd8ecf9e80bc1745dfcfc4971226d83
+vendor/lib/libcdsprpc.so|4ef30602663e13d44e1c7dd09db927fa4e6947ae
+vendor/lib/libfastrpc_utf_stub.so|945a41ea68452806d1a5add3584d34b30c7f9a95
+vendor/lib/libsysmon_cdsp_skel.so|c6dddba8637ad468de69bd329d2948721c537801
+vendor/lib64/libcdsp_default_listener.so|49de35be8f90e282de225596ab90661fa8ac4422
+vendor/lib64/libcdsprpc.so|891066a404b155c545ff7f4bf23cb7e042f29f28
+vendor/lib64/libfastrpc_utf_stub.so|15243b9539bb74069d6ee59bd70340b0ea0ec338
+vendor/lib64/libsysmon_cdsp_skel.so|8a951e039071107317e0e7541ff4df7ad35d87ad
 
 # CNE - from ddv_sprout 11-RKQ1.210607.001-00WW_3_440-release-keys
 -vendor/app/CneApp/CneApp.apk|13bdf6ba5637d3df3d6d9fb0017f9f56ddc620e7
@@ -198,6 +227,13 @@ vendor/lib64/librpmb.so|085a3a79b627d1210654ad50902b36a0ba3ee99c
 vendor/lib64/libsdedrm.so|a6af861a2db5721e0ef1d9606713e967c3d39b1c
 vendor/lib64/libsecureui.so|6cd84092ab2d70bf17fff025376d50294c935439
 vendor/lib64/libssd.so|08566fd544144a9fef6d53eb297df091f1f611af
+
+# DSP - from LA.UM.10.2.1.r1-03400-sdm660.0
+vendor/bin/dspservice|f194ad65a930f1ac1a7fdfefc637c0531d185e89
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|f902e821229cd1fff50ebfba99b0a068cbf74a56
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|223a9268bd92bd80dab3df02fbef38ea86bcbadd
 
 # ESE-Powermanager - from ddv_sprout 11-RKQ1.210607.001-00WW_3_440-release-keys
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|040212c2c39ca3f2090291dd3a7f49979e5003df
@@ -390,7 +426,7 @@ vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|3b972dc987838eb2fda1f9ed694fe
 vendor/bin/msm_irqbalance|b075c2f4092c175950a2c26d19bf2013e2efd6d5
 vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
 vendor/etc/perf/commonresourceconfigs.xml|c80efdafc6c5ef4fe0602f4ffe3137092513db38
-vendor/etc/perf/commonsysnodesconfigs.xml|63d293adfd5aa82551aa8fc0d30b38bffdcc497e
+vendor/etc/perf/commonsysnodesconfigs.xml|77ea36edec83f67f5c5591f36bd0f75e361db097
 vendor/etc/perf/perfboostsconfig.xml|17fb67ef843aaebe07903bec13dc0555c10612fa
 vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
 vendor/etc/perf/targetresourceconfigs.xml|c1e64eae221f714bc5bf97e83c69c37352311fab
