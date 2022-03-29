@@ -36,13 +36,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor \
+    android.hardware.bluetooth.a2dp@1.0-impl \
+    android.hardware.bluetooth.audio@2.1-impl \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
+    libbluetooth_audio_session \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
@@ -54,6 +58,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     bt.max.hfpclient.connections=1 \
+    persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
+    persist.bluetooth.a2dp_offload.disabled=false \
+    persist.vendor.bt.a2dp.aac_whitelist=false \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=true \
+    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac \
+    ro.bluetooth.a2dp_offload.supported=true \
+    ro.bluetooth.library_name=libbluetooth_qti.so \
     vendor.bluetooth.soc=cherokee
 
 # Board Platform
@@ -182,16 +193,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.0-impl \
     android.hardware.broadcastradio@1.0-service
-
-PRODUCT_PACKAGES += \
-    FM2 \
-    libqcomfm_jni \
-    qcom.fmradio \
-    qcom.fmradio.xml
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.hw.fm.init=0 \
-    vendor.fm.a2dp.conc.disabled=false
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -364,6 +365,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AsusSDM660Bluetooth \
     AsusSDM660CarrierConfig \
     AsusSDM660CellBroadcastReceiver \
     AsusSDM660Frameworks \
@@ -440,6 +442,7 @@ PRODUCT_PACKAGES += \
 
 # QTI Components
 QTI_COMPONENTS += audio
+QTI_COMPONENTS += bt
 QTI_COMPONENTS += init
 QTI_COMPONENTS += wlan
 TARGET_COMMON_QTI_COMPONENTS := $(QTI_COMPONENTS)
