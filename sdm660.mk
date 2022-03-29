@@ -92,11 +92,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.camera.privapp.list=org.codeaurora.snapcam \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam
 
-# Cgroup and task_profiles
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
-    $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
-
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
@@ -290,9 +285,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
-    libavservices_minijail \
-    libavservices_minijail.vendor
+    android.hardware.media.omx@1.0-impl
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
@@ -411,8 +404,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    vendor.qti.hardware.perf@2.2.vendor
+    android.hardware.power-service-qti
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
@@ -444,15 +436,9 @@ PRODUCT_PACKAGES += \
 QTI_COMPONENTS += audio
 QTI_COMPONENTS += bt
 QTI_COMPONENTS += init
+QTI_COMPONENTS += perf
 QTI_COMPONENTS += wlan
 TARGET_COMMON_QTI_COMPONENTS := $(QTI_COMPONENTS)
-
-# QTI Performance
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=libqti-perfd-client.so
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -568,10 +554,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-
-# Thermal
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.qti
 
 # Time
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
