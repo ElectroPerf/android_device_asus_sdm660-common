@@ -16,7 +16,7 @@ on boot
     write /sys/class/leds/red/brightness 1
     write /sys/class/leds/red/brightness 0
 
-service nvram_btwifi /system/bin/nvram_btwifi
+service nvram_btwifi /system_ext/bin/nvram_btwifi
     user root
     group system oem_2901
     oneshot

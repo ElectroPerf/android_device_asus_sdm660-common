@@ -13,7 +13,7 @@
 /mnt/vendor/dsp/fastrpc_shell_3                                               u:object_r:public_adsprpcd_file:s0
 
 # Nvram
-/system/bin/nvram_btwifi                                                      u:object_r:nvram_btwifi_exec:s0
+/system_ext/bin/nvram_btwifi                                                  u:object_r:nvram_btwifi_exec:s0
 
 # Persist
 /persist(/.*)?                                                                u:object_r:mnt_vendor_file:s0
