@@ -617,6 +617,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    init.btmac.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
     init.qcom.usb.sh
