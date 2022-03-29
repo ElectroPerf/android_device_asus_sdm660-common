@@ -30,9 +30,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 -->
 <resources>
-    <!-- Enable doze mode -->
-    <bool name="doze_display_state_supported">true</bool>
-
     <!-- Doze: should the pickup sensor be used as a pulse signal? -->
     <bool name="doze_pulse_on_pick_up">true</bool>
 

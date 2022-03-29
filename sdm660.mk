@@ -359,14 +359,9 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     AsusSDM660Bluetooth \
-    AsusSDM660CarrierConfig \
-    AsusSDM660CellBroadcastReceiver \
     AsusSDM660Frameworks \
     AsusSDM660Settings \
-    AsusSDM660SystemUI \
-    AsusSDM660Telephony \
-    TetheringOverlay \
-    WifiOverlay
+    AsusSDM660SystemUI
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -436,6 +431,7 @@ PRODUCT_PACKAGES += \
 QTI_COMPONENTS += audio
 QTI_COMPONENTS += bt
 QTI_COMPONENTS += init
+QTI_COMPONENTS += overlay
 QTI_COMPONENTS += perf
 QTI_COMPONENTS += wlan
 TARGET_COMMON_QTI_COMPONENTS := $(QTI_COMPONENTS)
