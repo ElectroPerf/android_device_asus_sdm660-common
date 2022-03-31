@@ -1,0 +1,17 @@
+<!-- 
+     Copyright (C) 2022 Paranoid Android
+
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest version="1.0" type="framework">
+    <!-- atfwd -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.radio.atcmdfwd</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IAtCmdFwd</name>
+            <instance>AtCmdFwdService</instance>
+        </interface>
+    </hal>
+</manifest>
