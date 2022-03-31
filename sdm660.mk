@@ -22,9 +22,17 @@ PRODUCT_COPY_FILES += \
 # Kernel
 TARGET_KERNEL_VERSION := 4.19
 
+# Overlay
+PRODUCT_PACKAGES += \
+    AsusSDM660Frameworks
+
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
+# QTI Common Components
+QTI_COMPONENTS += overlay
+TARGET_COMMON_QTI_COMPONENTS += $(QTI_COMPONENTS)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
