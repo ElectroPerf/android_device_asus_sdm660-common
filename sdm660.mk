@@ -24,7 +24,8 @@ TARGET_KERNEL_VERSION := 4.19
 
 # Overlay
 PRODUCT_PACKAGES += \
-    AsusSDM660Frameworks
+    AsusSDM660Frameworks \
+    AsusSDM660Settings
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
