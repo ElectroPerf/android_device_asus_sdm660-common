@@ -73,10 +73,15 @@ PRODUCT_COPY_FILES += \
 # QTI Common Components
 QTI_COMPONENTS += media-legacy
 QTI_COMPONENTS += overlay
+QTI_COMPONENTS += wlan
 TARGET_COMMON_QTI_COMPONENTS += $(QTI_COMPONENTS)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
+# WLAN
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wlan/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/sdm660-common/sdm660-common-vendor.mk)
