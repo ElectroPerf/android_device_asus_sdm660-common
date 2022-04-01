@@ -8,6 +8,18 @@
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.audio.fluence.speaker=false \
+    persist.vendor.audio.fluence.voicerec=true \
+    ro.vendor.audio.sdk.fluencetype=fluence \
+    vendor.audio.adm.buffering.ms=6 \
+    vendor.audio_hal.period_multiplier=2 \
+    vendor.audio.feature.compr_voip.enable=true
+
 # Board Platform
 TARGET_BOARD_PLATFORM := sdm660
 
@@ -77,6 +89,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # QTI Common Components
+QTI_COMPONENTS += audio
 QTI_COMPONENTS += media-legacy
 QTI_COMPONENTS += overlay
 QTI_COMPONENTS += wlan
