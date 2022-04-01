@@ -25,6 +25,11 @@ AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := true
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
+# Bluetooth
+BOARD_HAVE_BLUETOOTH_QCOM := true
+QCOM_BT_USE_BTNV := true
+TARGET_USE_QTI_BT_STACK := true
+
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
