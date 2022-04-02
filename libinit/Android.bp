@@ -1,0 +1,13 @@
+//
+// Copyright (C) 2022 Paranoid Android
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "libinit_sdm660",
+    recovery_available: true,
+    srcs: ["libinit_sdm660.cpp"],
+    include_dirs: ["system/core/init"],
+    shared_libs: ["libbase"]
+}
