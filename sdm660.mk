@@ -69,6 +69,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
     debug.stagefright.omx_default_rank=0
 
+# Data Modules
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.data.df.dev_name=rmnet_usb0
+    persist.vendor.data.mode=concurrent \
+    ro.vendor.use_data_netmgrd=true
+
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
 
@@ -174,8 +180,37 @@ QTI_COMPONENTS += bt
 QTI_COMPONENTS += init
 QTI_COMPONENTS += media-legacy
 QTI_COMPONENTS += overlay
+QTI_COMPONENTS += telephony
 QTI_COMPONENTS += wlan
 TARGET_COMMON_QTI_COMPONENTS += $(QTI_COMPONENTS)
+
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.secure_element@1.1 \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    librmnetctl \
+    libprotobuf-cpp-full
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.radio.VT_CAM_INTERFACE=2 \
+    persist.sys.fflag.override.settings_provider_model=false \
+    ro.telephony.default_network=20,20
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.radio.atfwd.start=true \
+    persist.vendor.radio.data_con_rprt=1 \
+    persist.vendor.radio.data_ltd_sys_ind=1 \
+    persist.vendor.radio.mt_sms_ack=30 \
+    vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
+    ro.telephony.iwlan_operation_mode=legacy \
+    ro.com.android.dataroaming=false
+
+# Radio (IMS)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.dbg.ims_volte_enable=1
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
