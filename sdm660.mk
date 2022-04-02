@@ -98,6 +98,11 @@ PRODUCT_COPY_FILES += \
 # Kernel
 TARGET_KERNEL_VERSION := 4.19
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.qcom \
+    android.hardware.lights-service.qti
+
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
