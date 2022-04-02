@@ -81,6 +81,38 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # Disable APEX compression
 PRODUCT_COMPRESSED_APEX := false
 
+# Display
+PRODUCT_PACKAGES += \
+    gralloc.sdm660 \
+    hwcomposer.sdm660 \
+    memtrack.sdm660 \
+    libvulkan
+
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    android.frameworks.displayservice@1.0 \
+    android.frameworks.displayservice@1.0.vendor \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    vendor.display.config@2.0 \
+    vendor.display.config@1.0.vendor \
+    vendor.display.config@2.0.vendor \
+    vendor.qti.hardware.display.allocator-service
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.hwc.mdpcomp.enable=true \
+    vendor.display.enable_default_color_mode=1 \
+    vendor.gralloc.enable_fb_ubwc=1 \
+    vendor.display.disable_skip_validate=1
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_hwc_vds=1 \
+    debug.sf.hw=1 \
+    vendor.display.disable_rotator_downscale=1 \
+    vendor.display.idle_time=32767
+
 # Init
 PRODUCT_PACKAGES += \
     init.btmac.sh \
@@ -103,11 +135,6 @@ PRODUCT_COPY_FILES += \
 
 # Kernel
 TARGET_KERNEL_VERSION := 4.19
-
-# Lights
-PRODUCT_PACKAGES += \
-    lights.qcom \
-    android.hardware.lights-service.qti
 
 # Media
 PRODUCT_PACKAGES += \
@@ -177,6 +204,7 @@ PRODUCT_COPY_FILES += \
 # QTI Common Components
 QTI_COMPONENTS += audio
 QTI_COMPONENTS += bt
+QTI_COMPONENTS += display
 QTI_COMPONENTS += init
 QTI_COMPONENTS += media-legacy
 QTI_COMPONENTS += overlay
