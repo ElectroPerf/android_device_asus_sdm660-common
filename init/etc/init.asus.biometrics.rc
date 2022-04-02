@@ -1,0 +1,15 @@
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service_asus
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system input uhid
+
+on boot
+    chmod 0666 /dev/fpsdev0
+    chmod 0666 /dev/goodix_fp
+    chmod 0666 /dev/focaltech_fp
+    chown system system /dev/fpsdev0
+    chown system system /dev/goodix_fp
+    chown system system /dev/focaltech_fp

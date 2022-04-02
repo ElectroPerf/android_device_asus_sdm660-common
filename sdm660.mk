@@ -75,6 +75,18 @@ PRODUCT_CHARACTERISTICS := nosdcard
 # Disable APEX compression
 PRODUCT_COMPRESSED_APEX := false
 
+# Init
+PRODUCT_PACKAGES += \
+    init.btmac.sh \
+    init.qcom.sensors.sh \
+    init.qti.dcvs.sh
+
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.asus.biometrics.rc \
+    init.qcom.asus.rc \
+    init.target.rc
+
 # Input
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
@@ -154,6 +166,7 @@ PRODUCT_COPY_FILES += \
 # QTI Common Components
 QTI_COMPONENTS += audio
 QTI_COMPONENTS += bt
+QTI_COMPONENTS += init
 QTI_COMPONENTS += media-legacy
 QTI_COMPONENTS += overlay
 QTI_COMPONENTS += wlan
