@@ -93,6 +93,10 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/etc/fstab.qcom
 
+# Releasetools
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
+
 # Symlinks
 TARGET_MOUNT_POINTS_SYMLINKS := true
 

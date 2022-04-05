@@ -272,6 +272,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.dbg.ims_volte_enable=1
 
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_asus
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
