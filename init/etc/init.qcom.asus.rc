@@ -38,15 +38,15 @@ service vendor-btmac-sh  /vendor/bin/init.btmac.sh
     oneshot
     disabled
 
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
     override
     class hal
     user nfc
     group nfc
     disabled
 
-on property:ro.hq.support.nfc=1
-    enable vendor.nfc_hal_service
+on boot && property:ro.boot.product.hardware.sku=NFC
+    enable nqnfc_2_0_hal_service
 
     # Prevents permission denied error for telephony
     chmod 0644 /proc/cmdline

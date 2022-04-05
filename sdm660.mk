@@ -180,6 +180,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/nfc/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.nfc.port=I2C
+
+TARGET_NFC_SKU := NFC
+
 # OMX
 PRODUCT_PACKAGES += \
     libOmxCore \
@@ -233,6 +238,7 @@ QTI_COMPONENTS += bt
 QTI_COMPONENTS += display
 QTI_COMPONENTS += init
 QTI_COMPONENTS += media-legacy
+QTI_COMPONENTS += nq-nfc
 QTI_COMPONENTS += overlay
 QTI_COMPONENTS += telephony
 QTI_COMPONENTS += wlan

@@ -50,6 +50,9 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE += device/qcom/common/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(COMMON_PATH)/configs/vintf/device_framework_compatibility_matrix.xml
 
+ODM_MANIFEST_SKUS += NFC
+ODM_MANIFEST_NFC_FILES := $(COMMON_PATH)/configs/vintf/manifest-nfc.xml
+
 # Kernel
 BOARD_KERNEL_CMDLINE      += console=ttyMSM0,115200n8 androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE      += earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom
