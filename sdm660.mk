@@ -176,6 +176,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     vendor.vidc.dec.enable.downscalar=1 \
     vendor.vidc.enc.disable.pq=true
 
+# NFC
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/nfc/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # OMX
 PRODUCT_PACKAGES += \
     libOmxCore \
