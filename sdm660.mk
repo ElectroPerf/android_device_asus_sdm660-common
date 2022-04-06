@@ -131,6 +131,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_rotator_downscale=1 \
     vendor.display.idle_time=32767
 
+# GPS
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.vendor.overlay.izat.optin=rro
+
 # Init
 PRODUCT_PACKAGES += \
     init.btmac.sh \
@@ -232,6 +236,7 @@ PRODUCT_COPY_FILES += \
 QTI_COMPONENTS += audio
 QTI_COMPONENTS += bt
 QTI_COMPONENTS += display
+QTI_COMPONENTS += gps
 QTI_COMPONENTS += init
 QTI_COMPONENTS += media-legacy
 QTI_COMPONENTS += nq-nfc
