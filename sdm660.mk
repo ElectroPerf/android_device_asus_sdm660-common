@@ -204,6 +204,14 @@ PRODUCT_PACKAGES += \
     AsusSDM660Frameworks \
     AsusSDM660Settings
 
+# Paranoid Doze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.sensor.proximity=true \
+    ro.sensor.pickup=asus.sensor.pickup
+
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
