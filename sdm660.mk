@@ -266,6 +266,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
+# NTP Server
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.backup.ntpServer=0.pool.ntp.org
+
 # OMX
 PRODUCT_PACKAGES += \
     libOmxCore \
