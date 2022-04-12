@@ -258,6 +258,10 @@ TARGET_NFC_SKU := NFC
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
 
+# Netflix
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.netflix.bsp_rev=Q660-13149-1
+
 # Neuralnetworks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
