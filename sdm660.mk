@@ -412,6 +412,14 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.surface_flinger.set_touch_timer_ms=5000 \
     ro.surface_flinger.set_idle_timer_ms=9000
 
+# Time
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.timed.enable=true
+
+# UBWC
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.video.disable.ubwc=1
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
