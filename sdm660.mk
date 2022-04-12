@@ -222,6 +222,11 @@ PRODUCT_COPY_FILES += \
 # Kernel
 TARGET_KERNEL_VERSION := 4.19
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0.vendor \
+    android.hardware.gatekeeper@1.0.vendor
+
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-impl \
