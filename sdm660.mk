@@ -183,6 +183,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_gl_phase_offset_ns=3000000 \
     debug.sf.early_gl_app_phase_offset_ns=15000000
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl-qti \
+    android.hardware.health@2.1-service
+
 # Init
 PRODUCT_PACKAGES += \
     init.btmac.sh \
