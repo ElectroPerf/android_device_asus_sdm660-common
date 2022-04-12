@@ -424,6 +424,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.usb.config=diag,serial_cdev,rmnet,adb
+
 # WLAN
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wlan/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
