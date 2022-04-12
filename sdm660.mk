@@ -394,6 +394,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-service \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
+# SoC Information
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.model=SDM660 \
+    ro.soc.manufacturer=QTI
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
