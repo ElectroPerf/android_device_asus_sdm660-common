@@ -169,6 +169,20 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.vendor.overlay.izat.optin=rro
 
+# Graphics
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    debug.sf.disable_backpressure=1 \
+    debug.sf.latch_unsignaled=0 \
+    persist.demo.hdmirotationlock=false \
+    persist.hwc.enable_vds=0 \
+    sdm.debug.disable_skip_validate=1
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.early_phase_offset_ns=1500000 \
+    debug.sf.early_app_phase_offset_ns=1500000 \
+    debug.sf.early_gl_phase_offset_ns=3000000 \
+    debug.sf.early_gl_app_phase_offset_ns=15000000
+
 # Init
 PRODUCT_PACKAGES += \
     init.btmac.sh \
