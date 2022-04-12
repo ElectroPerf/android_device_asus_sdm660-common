@@ -76,6 +76,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.preview.ubwc=0 \
     persist.vendor.camera.HAL3.enabled=1
 
+# Capability Configstore
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.capabilityconfigstore@1.0.vendor
+
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
