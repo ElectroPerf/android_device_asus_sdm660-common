@@ -95,6 +95,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
     debug.stagefright.omx_default_rank=0
 
+# Config Store
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Data Modules
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.data.df.dev_name=rmnet_usb0
